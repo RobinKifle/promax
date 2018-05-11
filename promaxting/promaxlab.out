@@ -1,0 +1,25 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Preprocessing and CMP-sorting}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{Raw Data}{section.2}% 3
+\BOOKMARK [1][-]{section.3}{Near Trace Stack}{}% 4
+\BOOKMARK [2][-]{subsection.3.1}{Common Midpoint \(CMP/Ensamble\) Stack}{section.3}% 5
+\BOOKMARK [2][-]{subsection.3.2}{Amplitude Recovery}{section.3}% 6
+\BOOKMARK [1][-]{section.4}{Data Processing}{}% 7
+\BOOKMARK [2][-]{subsection.4.1}{Muting and Scaling}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.2}{Bandpass Filtering}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.3}{Deconvolution and Autocorrelation}{section.4}% 10
+\BOOKMARK [1][-]{section.5}{Velocity Analysis, NMO-correction and Stacking}{}% 11
+\BOOKMARK [2][-]{subsection.5.1}{Velocity Analysis}{section.5}% 12
+\BOOKMARK [2][-]{subsection.5.2}{Velocity Analysis Quality Control}{section.5}% 13
+\BOOKMARK [2][-]{subsection.5.3}{NMO-correction and Stacking}{section.5}% 14
+\BOOKMARK [1][-]{section.6}{Migration}{}% 15
+\BOOKMARK [2][-]{subsection.6.1}{Post-Stack Time Migration}{section.6}% 16
+\BOOKMARK [2][-]{subsection.6.2}{Finite Difference \(FD\) Migration}{section.6}% 17
+\BOOKMARK [2][-]{subsection.6.3}{Kirchhoff Migration}{section.6}% 18
+\BOOKMARK [1][-]{section.7}{Observations and comparisons}{}% 19
+\BOOKMARK [2][-]{subsection.7.1}{Computed noise and muting}{section.7}% 20
+\BOOKMARK [2][-]{subsection.7.2}{Velocity pull-up}{section.7}% 21
+\BOOKMARK [2][-]{subsection.7.3}{Adjustment of dip}{section.7}% 22
+\BOOKMARK [2][-]{subsection.7.4}{Scattering}{section.7}% 23
+\BOOKMARK [1][-]{section.8}{Concluding remarks}{}% 24
+\BOOKMARK [1][-]{section.9}{References}{}% 25
