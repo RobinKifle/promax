@@ -108,6 +108,12 @@ Raw seismic data containing traces of both direct, reflected and refracted waves
 \label{fig2}
 \end{figure}
 
+\begin{figure}[H]
+\includegraphics[width=\textwidth]{rawWiggle.jpg}
+\caption{Raw data of CMP 1000 (left) and 1500 (right) as wiggle trace.}
+\label{rawWiggle}
+\end{figure}
+
 \section{Near Trace Stack}
 
 \subsection{Common Midpoint (CMP/Ensamble) Stack}
@@ -490,7 +496,9 @@ The Kirchhoff migration algorithm tries to make a hyperbola that has the best fi
 
 \section{Observations and comparisons}
 
-The processing done to the dataset during the entire workflow resulted in two migrated sections, one employing FDT-migration, the other employing Kirchhoff-migration. Four main observations were made in comparison of these sections both to each other and to the section prior to migration, see figures \ref{ny1} - \ref{ny3}. 
+The processing done to the dataset during the entire workflow resulted in two migrated sections, one employing FDT-migration, the other employing Kirchhoff-migration. Four main observations were made in comparison of these sections both to each other and to the section prior to migration, see figures \ref{ny1} - \ref{ny3}.
+
+Compare near trace stack with AGC to post stack pre migration!!!!!
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ny1.jpg}
@@ -518,7 +526,7 @@ The processing done to the dataset during the entire workflow resulted in two mi
 \label{ny4}
 \end{figure}
 
-\noindent Data at low offsets and time is muted and zeroed out with respect to NMO-stretching prior to migration, see figure 39-A. In the FDT-migration, figure 39-B data still appears, despite the mute. This is due to the implicit calculations done using data under the top mute during this type of migration. For the Kirchhoff-migration, figure 39-C however, lack of data at low offsets and time are coincident with the mute-function applied prior to migration. In summary, at these low offsets, Kirchhoff-migration displays a higher S/N-ratio and produces better imaging. 
+\noindent Data at low offsets and time is muted and zeroed out with respect to NMO-stretching prior to migration, see figure \ref{ny4} -A. In the FDT-migration, figure \ref{ny4} -B data still appears, despite the mute. This is due to the implicit calculations done using data under the top mute during this type of migration. For the Kirchhoff-migration, figure \ref{ny4} -C however, lack of data at low offsets and time are coincident with the mute-function applied prior to migration. In summary, at these low offsets, Kirchhoff-migration displays a higher S/N-ratio and produces better imaging. 
 
 \subsection{Velocity pull-up}
 
@@ -529,7 +537,7 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \label{ny5}
 \end{figure}
 
-\noindent Figure 40A shows how no reflectors appear below the salt dome and only noise can be observed. Comparing 40A with 40B and 40C shows how both migration types have immense effects on the data. For the FDT-migration, figure 40B, the deeper reflectors become visible under the salt dome. However, these reflectors experience profound velocity pull-up due to the high velocity of salt. To achieve a more accurate depiction of the subsurface, an advanced depth migration has to be implemented, which requires a better velocity model based on depth. For the Kirchhoff-migrated data, figure 40C, beneath the salt, the reflectors are better imaged as they show enhanced evenness and separation. However, the Kirchhoff-migrated data also show signs of velocity pull up, but not to as great an extent as the FDT-migration. 
+\noindent Figure \ref{ny5} -A shows how no reflectors appear below the salt dome and only noise can be observed. Comparing \ref{ny5} -A with \ref{ny5} -B and \ref{ny5} -C shows how both migration types have immense effects on the data. For the FDT-migration, figure \ref{ny5} -B, the deeper reflectors become visible under the salt dome. However, these reflectors experience profound velocity pull-up due to the high velocity of salt. To achieve a more accurate depiction of the subsurface, an advanced depth migration has to be implemented, which requires a better velocity model based on depth. For the Kirchhoff-migrated data, figure \ref{ny5} -C, beneath the salt, the reflectors are better imaged as they show enhanced evenness and separation. However, the Kirchhoff-migrated data also show signs of velocity pull up, but not to as great an extent as the FDT-migration. 
 
 \subsection{Adjustment of dip}
 
@@ -539,7 +547,7 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \label{ny6}
 \end{figure}
 
-Figure 41A-C shows how reflectors at the sides of the salt dome behave with migration. Before migration the reflector appear horizontal, but both FDT- and Kirchhoff-migration show that the reflectors actually dip upwards close to the dome. This is not an effect caused by migration, but rather the true dip of the sedimentary layers. The dip is caused by the salt pushing its way upwards due to buoyancy and in the process tilting the layers. This dip correction shows that both a 45 degree FDTM and Kirchhoff migration are able to handle such steep dips. 
+Figure \ref{ny6} -A-C shows how reflectors at the sides of the salt dome behave with migration. Before migration the reflector appear horizontal, but both FDT- and Kirchhoff-migration show that the reflectors actually dip upwards close to the dome. This is not an effect caused by migration, but rather the true dip of the sedimentary layers. The dip is caused by the salt pushing its way upwards due to buoyancy and in the process tilting the layers. This dip correction shows that both a $45^{\circ}$ FDTM and Kirchhoff migration are able to handle such steep dips. 
 
 \subsection{Scattering}
 
@@ -550,7 +558,7 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \label{ny7}
 \end{figure}
 
-\noindent The pre-migrated section (Figure 42-A-C) shows the typical diffraction hyperbola, which is reduced to a scattering point after migration. Both types of migrations seem to handle the collapse of diffraction hyperbolas very well so that true reflectors are revealed. 
+\noindent The pre-migrated section (Figure \ref{ny7} -A-C) shows the typical diffraction hyperbola, which is reduced to a scattering point after migration. Both types of migrations seem to handle the collapse of diffraction hyperbolas very well so that true reflectors are revealed. 
 
 \section{Concluding remarks}
 The workflow proved highly efficient in processing the data. Although the final results (FDT- and Kirchhoff-migrated sections) contain varying accuracy and S/N-ratios, they both reveal the presence of a salt dome fully enclosed by sedimentary layers. 
