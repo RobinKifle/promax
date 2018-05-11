@@ -300,13 +300,13 @@ Figure \ref{fig15} and \ref{fig16} displays the autocorrelation without and with
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig19.jpg}
-\caption{CMP 1500 before (left) and after (right) deconvolution. Red boxes markes zoomed sections in figure \ref{20}. Notice how multiples are heavily reduced during deconvolution.}
+\caption{CMP 1500 before (left) and after (right) deconvolution. Notice how multiples are heavily reduced during deconvolution.}
 \label{fig19}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig20.jpg}
-\caption{Cut-out of times from 350 - 650 ms showing autocorrelation of CMP 1500 before (left) and after (right) deconvolution. Multiples [M1] are marked with red arrows, Primary reflector [P] is marked with green arrow.}
+\caption{Cut-out of times from 350 - 650 ms showing autocorrelation of CMP 1500 before (left) and after (right) deconvolution. Multiples [M1] are marked with red arrows, Primary reflector [P] is marked with green arrow. (Zoomed section of red box in Figure \ref{fig19})}
 \label{fig20}
 \end{figure}
 
@@ -319,38 +319,36 @@ Prior to stacking, NMO-correction need to be applied to the different gathers. T
 \\
 The analysis consists of trying to determine the velocity distribution through the the model as a function of time (ProMAX, 2018; Gelius, 2018a). When fitting the data into a NMO-velocity model one assumes a horizontally layered earth model, and that the offsets are small spread. All offsets in the CMP-gather are used with intent to fit the reflections to an optimal hyperbolic traveltime model (Gelius, 2018a). 
 \\
-Correcting and stacking CMP-data for many different velocities within discrete time windows repeatedly is the most common form of velocity analysis. To interpret the velocity information, one measures the velocity spectrum within time-windows for different test-velocities to generate a semblance histogram presenting the normalized output to input energy ratio. As a general rule, the guiding velocity function is picked to go through areas with the highest semblance values (Gelius, 2018a).
+Correcting and stacking CMP-data for many different velocities within discrete time windows repeatedly is a common form of velocity analysis. As a general rule, the guiding velocity function is picked to go through areas with the highest semblance values (Gelius, 2018a).
 \\
-During this workflow, velocity analysis was performed on 12 equally spaced CMPs over the entire model. It was carried out by manually picking velocities using the semblance panel, with intent to generate the optimal correction of the CMP-gather resulting in horizontal primary reflectors. Picking velocities involve choosing points in the semblance panel with as high values as possible without deviating excessively from the provided velocity guide function. The manually picked velocities on the 12 CMPs are further interpolated between these gathers.
+During this workflow, velocity analysis was performed on 12 equally spaced CMPs over the entire model. It was carried out by manually picking velocities using the semblance panel, with intent to generate the optimal correction of the CMP-gather resulting in horizontal primary reflectors. Picking velocities involve choosing points in the semblance panel with as high semblance values as possible without deviating excessively from the provided velocity guide function. Implicitly, this assumes meagre lateral variations in geology, coinciding with the velocity functions being calculated assuming small variations in velocity change. The manually picked velocities on the 12 CMPs are further interpolated between these gathers.
 \\
 Striving for as high semblance as possible consequently minimizes risk of over- or undercorrection. If velocities are too high, this leads to undercorrection of the reflectors causing the reflectors to curve downwards. On the other hand, if velocities are too low, this causes upwards curvature due to overcorrection of the reflectors, see figure \ref{NMOoverunder}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{NMOcorr_over_under.jpg}
-\caption{NMOoverunder}
+\caption{Illustration of over and under-corrected traces. (a) and (d) are under-corrected, (b) is perfectly corrected and (c) is over-corrected}
 \label{NMOoverunder}
 \end{figure}
 
-\noindent As for picking interval, the analysis was performed using more or less regular intervals, depending on the semblance. Implicitly, this assumes meager lateral variations in geology, coinciding with the velocity functions being calculated assuming small variations in velocity change. 
-\\
-Velocity analyses for CMP 870 and CMP 1190 can be seen in figures \ref{VA870} - \ref{VA1190}, where the panels (from the left) are the:
+\noindent Velocity analyses for CMP 870 and CMP 1190 can be seen in figures \ref{VA870} - \ref{VA1190}, where the panels (from the left) are the:
 
 \begin{enumerate}
     \item Velocity spectrum/semblance panel: showing variations in velocities and their semblance to the velocity model. The highest semblance is marked with red colour
-    \item Gather panel: CMP analyzed as a function of time and offset is plotted
+    \item Gather panel: CMP, time vs. offset
     \item Dynamic stackpanel: showing mini-stacks based on the velocities picked using the semblance panel
     \item Function stack panel: showing mini-stacks based on one single velocity function with a constant velocity (constant velocity stacks) (Gelius, 2018a; ProMax, 2018)
 \end{enumerate}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_870.jpg}
-\caption{VA870}
+\caption{Velocity analysis for CMP 870. Four columns, respectively representing from the left: semblance panel, gather panel, dynamic stack panel and function stack panel.}
 \label{VA870}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_1190.jpg}
-\caption{VA1190}
+\caption{Velocity analysis for CMP 1190. Four columns, respectively representing from the left: semblance panel, gather panel, dynamic stack panel and function stack panel.}
 \label{VA1190}
 \end{figure}
 
@@ -358,13 +356,13 @@ Velocity analyses for CMP 870 and CMP 1190 can be seen in figures \ref{VA870} - 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{beforeAfter_NMOcorr_870.jpg}
-\caption{NMO870}
+\caption{Comparison of CMP 870 (gather panels) before (left) and after (right) applied NMO-correction. Notice how the reflections have more of a horizontal trend after applying NMO-correction.}
 \label{NMO870}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{beforeAfter_NMOcorr_1190.jpg}
-\caption{NMO190}
+\caption{Comparison of CMP 1190 (gather panels) before (left) and after (right) applied NMO-correction. Notice how the reflections have more of a horizontal trend after applying NMO-correction.}
 \label{NMO1190}
 \end{figure}
 
@@ -372,27 +370,27 @@ Velocity analyses for CMP 870 and CMP 1190 can be seen in figures \ref{VA870} - 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_example_870.jpg}
-\caption{VA870ex}
+\caption{Semblance panel and gather panel for CMP 870. Intervals where the velocity model has greater velocities than those in the semblance map are boxed in, along with the coinciding undercorrected reflectors, dipping slightly downwards seen in the gather panel.}
 \label{VA870ex}
 \end{figure}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_example_1190.jpg}
-\caption{VA1190ex}
+\caption{Semblance panel and gather panel for CMP 1190. Intervals where the velocity model has lower velocities than those in the semblance map are boxed in, along with the coinciding overcorrected reflectors, dipping slightly upwards seen in the gather panel.}
 \label{VA1190ex}
 \end{figure}
 
 \subsection{Velocity Analysis Quality Control}
 
-As the velocity analysis was performed using the CMP-method, the analysis assumes a geological model corresponding to a velocity field that gradually varies as a function of depth without any significant lateral variations. If these assumptions prove incorrect both the velocity analysis and the stacked section may be distorted. Such anomalies might be caused by diffractions, multiples, shallow gas pockets, interference, dip and out-of-plane reflections (Gelius, 2018a). 
+As the velocity analysis was performed using the CMP-method, the analysis assumes a geological model corresponding to a velocity field that gradually varies as a function of traveltime without any significant lateral variations. If these assumptions prove incorrect both the velocity analysis and the stacked section may be distorted. Such anomalies might be caused by diffractions, multiples, shallow gas pockets, interference, dip and out-of-plane reflections (Gelius, 2018a). 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_smooth.jpg}
-\caption{Smooth}
+\caption{The result from the velocity analysis. Velocity is clearly increasing with travel time, but there are some irregularities.}
 \label{Smooth}
 \end{figure}
 
-Figure \ref{Smooth} shows the result of the velocity control, displaying the velocity field. As the field shows no significant signs of abrupt distortions or lateral variations the field may be applied when NMO-correcting the data.
+\noindent Figure \ref{Smooth} shows the result of the velocity control, displaying the velocity field. As the field shows no significant signs of abrupt distortions or lateral variations the field may be applied when NMO-correcting the data.
 
 
 \subsection{NMO-correction and Stacking}
@@ -401,7 +399,7 @@ Successive shots in a marine CMP-gather increases travel time for the respective
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{NMOcorr_stacking.jpg}
-\caption{NMOS}
+\caption{Illustration of how NMO-correction and stacking works in theory. The traces are aligned at different offsets and then added together in the stacking process.}
 \label{NMOS}
 \end{figure}
 
@@ -417,15 +415,15 @@ This equation holds two major assumptions:
     \item Small offsets
 \end{itemize}
 
-\noindent From the equation above, one may observe that a too large $v_{nmo}$ results in too small of a correction and vice versa, as previously illustrated in figure \ref{NMOoverunder}. If the $v_{nmo}$, and therefore the correction, is wrongly calibrated, the reflectors will not align after stacking resulting in seismic section without any clear interfaces. 
+\noindent From the equation above, one may observe that a too large $v_{nmo}$ results in too small of a correction and vice versa, as previously illustrated in figure \ref{NMOoverunder}. If the $v_{nmo}$, and therefore the correction, is wrongly calibrated, the reflectors will not align when stacked resulting in seismic section without any clear interfaces. 
 \\
-Given a constant velocity $v_{nmo}$ and offset x, the correction $\Delta t$ becomes smaller when $t_0$ becomes larger. NMO is also non-linear with respect to offset and travel time. This tells us that the correction is far from constant along a trace, and the correction becomes more extrusive for larger offset or shallow depths with lower velocity. This leads to NMO-stretch. These stretches are easily muted after the NMO-correction.
+Given a constant velocity $v_{nmo}$ and offset x, the correction $\Delta t$ becomes smaller when $t_0$ becomes larger. NMO is also non-linear with respect to offset and travel time. This tells us that the correction is far from constant along a trace, and the correction becomes more extrusive for larger offset or shallow depths with lower velocity. This leads to NMO-stretching. These stretches are easily muted after the NMO-correction.
 \\
-Stacking is then performed on the NMO-corrected traces in the CMP-gathers. The result of the stacking is thus dependant on the quality of the velocity analysis.  Migration, both Kirchhoff and Finite-Difference, are later applied on the data to relocate the geometric features to their correct position.
+Stacking is then performed on the NMO-corrected traces in the CMP-gathers. The result of the stacking is thus dependant on the quality of the velocity analysis.
 
 \section{Migration}
 
-After muting, scaling, autocorrelation and deconvolution, velocity analysis, NMO-correction and stacking the result is a post-stack non-migrated section, see figure \ref{fmig}
+After muting, scaling, filtering, autocorrelation and deconvolution, velocity analysis, NMO-correction and stacking the result is a post-stack non-migrated section, see figure \ref{fmig}
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fmig.jpg}
@@ -436,34 +434,34 @@ After muting, scaling, autocorrelation and deconvolution, velocity analysis, NMO
 \noindent Migration of seismic data aims to relocate seismic features to their true subsurface locations and collapse diffractions, thus increasing spatial resolution and producing a correct seismic image of the subsurface. The procedure of migration consists of two steps:
 
 \begin{itemize}
-    \item Downward extrapolation: a simulation involving moving the receivers from the surface down through the model with an arbitrarily small depth interval
-    \item Imaging: for each moved (downward extrapolated) receiver, a new seismic section is formed. From each section, only the signals received close to zero offset is kept, to further treat these arriving signals as local secondary sources. Combining these strips forms a migrated section (Gelius, 2018b; Yilmas, 2014)
+    \item Downward extrapolation: a simulation involving moving the receivers from the surface down through the model with an arbitrarily small travel time interval
+    \item Imaging: for each moved (downward extrapolated) receiver, a new seismic strip is formed. From each strip, only the signals received close to zero offset is kept, to further treat these arriving signals as local secondary sources. Combining these strips forms a migrated section (Gelius, 2018b; Yilmas, 2014)
 \end{itemize}
 
-\noindent We separate post-stack and pre-stack migration, along with whether they are performed in time or depth domain. When complexity in velocity is prominent, time migration does not produce a good subsurface image. In such cases depth migration is preferred. In cases with strong complexity in geology, pre-stack is preferred (Gelius, 2018b). See figure \ref{Types} illustrating the relationship between the different migration processes.
+\noindent We separate post-stack and pre-stack migration, along with whether they are performed in time or depth domain. When complexity in velocity is prominent, time migration does not produce a good subsurface image. In such cases depth migration is preferred. In cases with strong complexity in geology, pre-stack is preferred (Gelius, 2018b). See figure \ref{Types}, illustrating the relationship between the different migration processes.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{types_of_migration.jpg}
-\caption{Types}
+\includegraphics[scale=0.4]{types_of_migration.jpg}
+\caption{Illustration showing ideal migration type in relation to complexity in geology and velocity. Modified from Gelius (2018b).}
 \label{Types}
 \end{figure}
 
 \subsection{Post-Stack Time Migration}
 
-\noindent Post-stack time migration stacks the traces before the events are repositioned to their actual position in time. The disadvantage of post stack time migration is that it only yields good results when the geology and velocity of the model is uncomplicated. Post stack time migrations are usually computational efficient and should be used when possible. In this project, two types of post stack time migration are used: Finite Difference time migration (FDTM) and Kirchhoff time migration.
+\noindent Post-stack time migration stacks the traces before the events are repositioned to their actual position in time. The disadvantage of post stack time migration is that it only yields good results when the geology and velocity of the model is uncomplicated. Post stack time migrations are usually computationally efficient and should be used when possible. In this project, two types of post stack time migration are used: Finite Difference time migration (FDTM) and Kirchhoff time migration.
 
 \subsection{Finite Difference (FD) Migration}
 
 \noindent FD-migration is based on parabolic approximations of the wave-equation, and can be used to recursively implement downward extrapolations, still handling lateral velocity changes.\\
-FD-migration may be implemented in time with dip limitation, and by retaining the thin-lense term of the scalar wave equation. FD-migration may also be implemented on steep dips in depth-migration (Gelius, 2018b).
+FD-migration may be implemented in time with dip limitation, by retaining the thin-lense term of the scalar wave equation. FD-migration may also be implemented on steep dips in depth-migration (Gelius, 2018b).
 \\
 Finite Difference depth-migration (FDDM) can handle significantly large lateral velocity variations, but is highly sensitive to inaccurate migration velocity. Finite Difference time-migration (FDTM) however, can handle only somewhat lateral velocity variations. This requires that the lateral variations are smooth and much smaller than the vertical variations. However, caution is required when performing the migration as FDTM-schemes may cause dispersion effects and contain dip-angle limitations (Gelius, 2018b). 
 \\
-As the FD-migration is employed in the time domain for this workflow, the 45 degree max dip approximation was used. Result of FD, see figure \ref{FDTM}
+As the FD-migration is employed in the time domain for this workflow, the $45^{\circ}$ max dip approximation was used. This means that the scheme can handle dips up $45^{\circ}$,. The result of FDTM can be seen in Figure \ref{FDTM}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{FDmed3aforkirchh.jpg}
-\caption{FDTM}
+\caption{FDT-migrated section using a $45^{\circ}$ implicit scheme}
 \label{FDTM}
 \end{figure}
 
@@ -472,22 +470,22 @@ As the FD-migration is employed in the time domain for this workflow, the 45 deg
 The Kirchhoff migration algorithm tries to make a hyperbola that has the best fit with the traces, to then stack all the trace values at the apex of the hyperbola (Figure \ref{KGeoClass}). 
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{kirchhoffGeoClass.jpg}
-\caption{KGeoClass}
+\includegraphics[scale=0.5]{kirchhoffGeoClass.jpg}
+\caption{Illustration of how Kirchhoff-migration is stacking traces at the apex of a fitted hyperbola}
 \label{KGeoClass}
 \end{figure}
 
-\noindent The Kirchhoff migration made in ProMax relies on the velocity function containing the stacking velocities, unlike FD which relies on the migration velocity function which is based on interval velocity. Result of Kirchhoff, see figure \ref{KTM}.
+\noindent The Kirchhoff migration made in ProMax relies on the velocity function containing the stacking velocities, unlike FD which relies on the migration velocity function which is based on interval velocity. The result of Kirchhoff can be seen on Figure \ref{KTM}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{kirchhmed3aforkirchh.jpg}
-\caption{KTM}
+\caption{Kirchhoff migrated section}
 \label{KTM}
 \end{figure}
 
 \section{Observations and comparisons}
 
-The processing done to the dataset during the entity of this workflow resulted in two migrated sections, one employing FDT-migration, the other employing Kirchhoff-migration. Four main observations were made in comparison of these sections both to each other and to the section prior to migration, see figures XX-XX. 
+The processing done to the dataset during the entire workflow resulted in two migrated sections, one employing FDT-migration, the other employing Kirchhoff-migration. Four main observations were made in comparison of these sections both to each other and to the section prior to migration, see figures \ref{ny1} - \ref{ny3}. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ny1.jpg}
@@ -511,13 +509,11 @@ The processing done to the dataset during the entity of this workflow resulted i
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ny4.jpg}
-\caption{Figures show zoomed sections marked in red boxes in figures \ref{ny1} - \ref{ny3}.}
+\caption{Figures show zoomed sections marked in red boxes in figures \ref{ny1} - \ref{ny3}. A: before migration, B: after applying FDT-migration and C: after applying Kirchhoff-migration.}
 \label{ny4}
 \end{figure}
 
-\noindent A: before migration, B: after applying FDT-migration and C: after applying Kirchhoff-migration. 
-\\
-Data at low offsets and time is muted and zeroed out with respect to NMO-stretching prior to migration, see figure 39A. In the FDT-migration, figure 39B data still appears, despite the mute. This is due to the implicit calculations done using data under the top mute during this type of migration. For the Kirchhoff-migration, figure 39C however, lack of data at low offsets and time are coincident with the mute-function applied prior to migration. In summary, at these low offsets, Kirchhoff-migration displays a higher S/N-ratio and produces better imaging. 
+\noindent Data at low offsets and time is muted and zeroed out with respect to NMO-stretching prior to migration, see figure 39-A. In the FDT-migration, figure 39-B data still appears, despite the mute. This is due to the implicit calculations done using data under the top mute during this type of migration. For the Kirchhoff-migration, figure 39-C however, lack of data at low offsets and time are coincident with the mute-function applied prior to migration. In summary, at these low offsets, Kirchhoff-migration displays a higher S/N-ratio and produces better imaging. 
 
 \subsection{Velocity pull-up}
 
@@ -528,19 +524,17 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \label{ny5}
 \end{figure}
 
-\noindent In the deeper reflections below the salt dome, both migration types show immense effects on the data. For the FDT-migration, figure 40B, the deeper reflectors become visible under the salt dome. However, these reflectors experience profound velocity pull-up due to the high velocity of salt. To achieve a more accurate depiction of the subsurface, an advanced depth migration has to be implemented, which requires a better velocity model based on depth. For the Kirchhoff-migrated data, figure 40C, beneath the salt, the reflectors are better imaged as they show enhanced evenness and separation. However, the Kirchhoff-migrated data also show signs of velocity pull up, but not to as great an extent as the FDT-migration. 
+\noindent Figure 40A shows how no reflectors appear below the salt dome and only noise can be observed. Comparing 40A with 40B and 40C shows how both migration types have immense effects on the data. For the FDT-migration, figure 40B, the deeper reflectors become visible under the salt dome. However, these reflectors experience profound velocity pull-up due to the high velocity of salt. To achieve a more accurate depiction of the subsurface, an advanced depth migration has to be implemented, which requires a better velocity model based on depth. For the Kirchhoff-migrated data, figure 40C, beneath the salt, the reflectors are better imaged as they show enhanced evenness and separation. However, the Kirchhoff-migrated data also show signs of velocity pull up, but not to as great an extent as the FDT-migration. 
 
 \subsection{Adjustment of dip}
 
 \begin{figure}[H]
 \includegraphics[scale=0.4]{ny6.jpg}
-\caption{Figures show zoomed sections marked in yellow boxes in figures \ref{ny1} - \ref{ny3}.}
+\caption{Figures show zoomed sections marked in yellow boxes in figures \ref{ny1} - \ref{ny3}. A: before migration, B: after applying FDT-migration and C: after applying Kirchhoff-migration. }
 \label{ny6}
 \end{figure}
 
-\noindent A: before migration, B: after applying FDT-migration and C: after applying Kirchhoff-migration. 
-\\
-Figure 41A-C shows how reflectors at the sides of the salt dome behave with migration. Before migration the reflector appear horizontal, but both FDT- and Kirchhoff-migration show that the reflectors actually dip upwards close to the dome. This is not an effect caused by migration, but rather the true dip of the sedimentary layers. The dip is caused by the salt pushing its way upwards due to buoyancy and in the process tilting the layers. This dip shows that both a 45 degree FDTM and Kirchhoff migration are able to handle such steep dips. 
+Figure 41A-C shows how reflectors at the sides of the salt dome behave with migration. Before migration the reflector appear horizontal, but both FDT- and Kirchhoff-migration show that the reflectors actually dip upwards close to the dome. This is not an effect caused by migration, but rather the true dip of the sedimentary layers. The dip is caused by the salt pushing its way upwards due to buoyancy and in the process tilting the layers. This dip correction shows that both a 45 degree FDTM and Kirchhoff migration are able to handle such steep dips. 
 
 \subsection{Scattering}
 
@@ -551,16 +545,16 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \label{ny7}
 \end{figure}
 
-\noindent The pre-migrated section (Figure 42A-C) shows the typical diffraction hyperbola, which is reduced to a scattering point after migration. Both types of migrations seem to handle the collapse of diffraction hyperbolas very well so that true reflectors are revealed. 
+\noindent The pre-migrated section (Figure 42-A-C) shows the typical diffraction hyperbola, which is reduced to a scattering point after migration. Both types of migrations seem to handle the collapse of diffraction hyperbolas very well so that true reflectors are revealed. 
 
 \section{Concluding remarks}
-By following the presented workflow in this paper, a seismic processing sequence was performed in ProMAX on a 2D line. Without further processing, the workflow presents the following concluding remarks: 
-\\
 The workflow proved highly efficient in processing the data. Although the final results (FDT- and Kirchhoff-migrated sections) contain varying accuracy and S/N-ratios, they both reveal the presence of a salt dome fully enclosed by sedimentary layers. 
 \\
-All multiples, not only the seabed multiple could have been removed with intent to increase the accuracy of the NMO-correction.
+Applying a velocity model based on the assumption of small lateral velocity variation somewhat retards the success of both the Kirchhoff- and FDT-migration-schemes. This ought to be taken into consideration for in future studies.
 \\
-Applying a velocity model based on the assumption of small lateral velocity variation somewhat retards the success of both the Kirchhoff- and FDT-migration-schemes. This ought to be taken into consideration for in future studies. 
+All multiples, not only the seabed multiple could have been removed with intent to increase the accuracy of the NMO-correction. Having the salt dome in mind while doing the velocity analysis would also improve results.
+\\
+The processes applied in this workflow gave great results, but even more processing could have been done to the data to improve the final image.
 
 \newpage
 
@@ -570,10 +564,10 @@ Applying a velocity model based on the assumption of small lateral velocity vari
     \item Baird Petrophysical (2005) Velocity Analysis and NMO-Correction [Online]. Houston: Baird Petrophysical International. Available from: $<http://www.bairdpetro.com/pdf_files/p58-62.pdf>$ [02.05.18]
     \item Gelius, L. J., 2018a. Seismic Signal Theory and Processing, UniGeo: GeoClass 
     \item Gelius, L. J., 2018b. Seismic Imaging, UniGeo: GeoClass
-    \item Gillis, G. (2018a) Stack [Online]. Texas: Schlumberger Oilfield Glossary. Available from: $<http://www.glossary.oilfield.slb.com/Terms/s/stack.aspx>$ [30.04.18].
-    \item Gillis, G. (2018b) AGC [Online]. Texas: Schlumberger Oilfield Glossary. Available from: $<http://www.glossary.oilfield.slb.com/Terms/a/automatic_gain_control.aspx>$ [30.04.18].
+    \item Gillis, G. (2018a) Stack [Online]. Texas: Schlumberger Oilfield Glossary. Available from:\\ $<http://www.glossary.oilfield.slb.com/Terms/s/stack.aspx>$ [30.04.18].
+    \item Gillis, G. (2018b) AGC [Online]. Texas: Schlumberger Oilfield Glossary. Available from:\\ $<http://www.glossary.oilfield.slb.com/Terms/a/automatic_gain_control.aspx>$ [30.04.18].
     \item XSGEO (2015) [Online]. Hess Corporation. Available from: $<http://www.xsgeo.com/course/acq.htm>$ [02.05.18]
-    \item Yilmaz, O. (2014) Introduction to Migration [Online]. SEG Wiki. Available from: $<http://dx.doi.org/10.1190/1.9781560801580>$ [03.04.18]
+    \item Yilmaz, O. (2014) Introduction to Migration [Online]. SEG Wiki. Available from:\\ $<http://dx.doi.org/10.1190/1.9781560801580>$ [03.04.18]
 \end{itemize}
 
 \end{document}
