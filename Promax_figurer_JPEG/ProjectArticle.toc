@@ -10,6 +10,7 @@
 \contentsline {subsection}{\numberline {4.3}Deconvolution and Autocorrelation}{14}{subsection.4.3}
 \contentsline {section}{\numberline {5}Velocity Analysis, NMO-correction and Stacking}{18}{section.5}
 \contentsline {subsection}{\numberline {5.1}Velocity Analysis}{18}{subsection.5.1}
+<<<<<<< HEAD
 \contentsline {subsection}{\numberline {5.2}Velocity Analysis Quality Control}{24}{subsection.5.2}
 \contentsline {subsection}{\numberline {5.3}NMO-correction and Stacking}{24}{subsection.5.3}
 \contentsline {section}{\numberline {6}Migration}{26}{section.6}
@@ -23,3 +24,18 @@
 \contentsline {subsection}{\numberline {7.4}Scattering}{35}{subsection.7.4}
 \contentsline {section}{\numberline {8}Concluding remarks}{35}{section.8}
 \contentsline {section}{\numberline {9}References}{37}{section.9}
+=======
+\contentsline {subsection}{\numberline {5.2}Velocity Analysis Quality Control}{25}{subsection.5.2}
+\contentsline {subsection}{\numberline {5.3}NMO-correction and Stacking}{26}{subsection.5.3}
+\contentsline {section}{\numberline {6}Migration}{28}{section.6}
+\contentsline {subsection}{\numberline {6.1}Post-Stack Time Migration}{29}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Finite Difference (FD) Migration}{29}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Kirchhoff Migration}{30}{subsection.6.3}
+\contentsline {section}{\numberline {7}Observations and comparisons}{31}{section.7}
+\contentsline {subsection}{\numberline {7.1}Computed noise and muting}{34}{subsection.7.1}
+\contentsline {subsection}{\numberline {7.2}Velocity pull-up}{35}{subsection.7.2}
+\contentsline {subsection}{\numberline {7.3}Adjustment of dip}{36}{subsection.7.3}
+\contentsline {subsection}{\numberline {7.4}Scattering}{37}{subsection.7.4}
+\contentsline {section}{\numberline {8}Concluding remarks}{37}{section.8}
+\contentsline {section}{\numberline {9}References}{39}{section.9}
+>>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
