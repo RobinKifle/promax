@@ -1,16 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.2)  11 MAY 2018 17:42
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.29)  11 MAY 2018 16:24
-=======
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.2)  11 MAY 2018 16:41
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.9.29)  11 MAY 2018 16:19
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.10.2)  12 MAY 2018 18:10
 entering extended mode
 **./ProjectArticle.tex
 (ProjectArticle.tex
@@ -860,579 +848,320 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `ProjectArticle.toc'.
 
  [2]
-<wf3.jpg, id=142, 873.2625pt x 1023.825pt>
+<wf3.jpg, id=143, 873.2625pt x 1023.825pt>
 File: wf3.jpg Graphic file (type jpg)
  <use wf3.jpg>
-Package pdftex.def Info: wf3.jpg used on input line 84.
+Package pdftex.def Info: wf3.jpg used on input line 78.
 (pdftex.def)             Requested size: 261.98076pt x 307.14987pt.
  [3 <./wf3.jpg>]
-<fig1.jpg, id=150, 522.95375pt x 582.175pt>
+<fig1.jpg, id=151, 522.95375pt x 582.175pt>
 File: fig1.jpg Graphic file (type jpg)
  <use fig1.jpg>
-Package pdftex.def Info: fig1.jpg used on input line 96.
+Package pdftex.def Info: fig1.jpg used on input line 97.
 (pdftex.def)             Requested size: 209.1778pt x 232.86588pt.
 
-<fig2.jpg, id=152, 3346.5025pt x 1665.22125pt>
+<fig2.jpg, id=154, 399.29175pt x 224.037pt>
 File: fig2.jpg Graphic file (type jpg)
  <use fig2.jpg>
-Package pdftex.def Info: fig2.jpg used on input line 106.
-(pdftex.def)             Requested size: 452.9679pt x 225.37958pt.
+Package pdftex.def Info: fig2.jpg used on input line 107.
+(pdftex.def)             Requested size: 452.9679pt x 254.15706pt.
  [4 <./fig1.jpg>]
-<rawWiggle.jpg, id=159, 461.3235pt x 231.86626pt>
+<rawWiggle.jpg, id=162, 461.3235pt x 231.86626pt>
 File: rawWiggle.jpg Graphic file (type jpg)
  <use rawWiggle.jpg>
-Package pdftex.def Info: rawWiggle.jpg used on input line 112.
+Package pdftex.def Info: rawWiggle.jpg used on input line 113.
 (pdftex.def)             Requested size: 452.9679pt x 227.66962pt.
- [5 <./fig2.jpg> <./rawWiggle.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 126.
+ [5 <./fig2.jpg> <./rawWiggle.jpg>] <fig3.jpg, id=168, 361.95226pt x 279.444pt>
+File: fig3.jpg Graphic file (type jpg)
+
+<use fig3.jpg>
+Package pdftex.def Info: fig3.jpg used on input line 129.
+(pdftex.def)             Requested size: 452.9679pt x 315.83936pt.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 137.
 
  ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 126.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
 
-
-LaTeX Warning: Command \textbullet invalid in math mode on input line 135.
-
-
-LaTeX Warning: Command \textbullet invalid in math mode on input line 135.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--151
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 140--151
-
- []
-
-<fig3.jpg, id=167, 3346.5025pt x 2091.815pt>
-File: fig3.jpg Graphic file (type jpg)
- <use fig3.jpg>
-Package pdftex.def Info: fig3.jpg used on input line 153.
-(pdftex.def)             Requested size: 452.9679pt x 277.47304pt.
- [6]
-<fig4.jpg, id=179, 3346.5025pt x 2091.815pt>
+[6 <./fig3.jpg>] <fig4.jpg, id=178, 531.78674pt x 327.624pt>
 File: fig4.jpg Graphic file (type jpg)
  <use fig4.jpg>
-Package pdftex.def Info: fig4.jpg used on input line 159.
-(pdftex.def)             Requested size: 452.9679pt x 277.47304pt.
- [7 <./fig3.jpg> <./fig4.jpg>] <fig5.jpg, id=192, 3778.115pt x 2826.56pt>
+Package pdftex.def Info: fig4.jpg used on input line 162.
+(pdftex.def)             Requested size: 452.9679pt x 257.20119pt.
+
+[7] <fig5.jpg, id=193, 3778.115pt x 2826.56pt>
 File: fig5.jpg Graphic file (type jpg)
  <use fig5.jpg>
-Package pdftex.def Info: fig5.jpg used on input line 177.
+Package pdftex.def Info: fig5.jpg used on input line 179.
 (pdftex.def)             Requested size: 452.9679pt x 338.87065pt.
- [8]
-<fig6.jpg, id=199, 3346.5025pt x 2091.815pt>
+ [8 <./fig4.jpg>]
+<fig6.jpg, id=201, 713.064pt x 327.624pt>
 File: fig6.jpg Graphic file (type jpg)
  <use fig6.jpg>
-Package pdftex.def Info: fig6.jpg used on input line 186.
-(pdftex.def)             Requested size: 452.9679pt x 277.47304pt.
+Package pdftex.def Info: fig6.jpg used on input line 188.
+(pdftex.def)             Requested size: 452.9679pt x 191.50505pt.
  [9 <./fig5.jpg>]
-<fig7ekte.jpg, id=209, 1539.7525pt x 390.45876pt>
+<fig7ekte.jpg, id=211, 1539.7525pt x 390.45876pt>
 File: fig7ekte.jpg Graphic file (type jpg)
  <use fig7ekte.jpg>
-Package pdftex.def Info: fig7ekte.jpg used on input line 198.
+Package pdftex.def Info: fig7ekte.jpg used on input line 199.
 (pdftex.def)             Requested size: 452.9679pt x 114.8626pt.
 
-<fig8.jpg, id=210, 1054.94125pt x 477.785pt>
+<fig8.jpg, id=212, 1054.94125pt x 477.785pt>
 File: fig8.jpg Graphic file (type jpg)
  <use fig8.jpg>
-Package pdftex.def Info: fig8.jpg used on input line 204.
+Package pdftex.def Info: fig8.jpg used on input line 205.
 (pdftex.def)             Requested size: 452.9679pt x 205.14464pt.
- [10 <./fig6.jpg> <./fig7ekte.jpg (PNG copy)>] <fig9.jpg, id=219, 2206.2425pt x
+ [10 <./fig6.jpg> <./fig7ekte.jpg (PNG copy)>] <fig9.jpg, id=221, 2206.2425pt x
  956.57375pt>
 File: fig9.jpg Graphic file (type jpg)
 
 <use fig9.jpg>
 Package pdftex.def Info: fig9.jpg used on input line 217.
-(pdftex.def)             Requested size: 452.9679pt x 196.39081pt.
- [11 <./fig8.jpg>] <fig10.jpg, id=226, 709.65125pt x 439.6425pt>
+(pdftex.def)             Requested size: 220.63718pt x 95.66298pt.
+ [11 <./fig8.jpg> <./fig9.jpg>]
+<fig10.jpg, id=228, 709.65125pt x 439.6425pt>
 File: fig10.jpg Graphic file (type jpg)
-
-<use fig10.jpg>
+ <use fig10.jpg>
 Package pdftex.def Info: fig10.jpg used on input line 228.
 (pdftex.def)             Requested size: 283.85547pt x 175.85388pt.
- <fig11.jpg, id=227, 3346.5025pt x 2091.815pt>
+
+<fig11.jpg, id=229, 691.383pt x 407.121pt>
 File: fig11.jpg Graphic file (type jpg)
  <use fig11.jpg>
 Package pdftex.def Info: fig11.jpg used on input line 234.
-(pdftex.def)             Requested size: 452.9679pt x 277.47304pt.
+(pdftex.def)             Requested size: 452.9679pt x 242.02086pt.
 
-[12 <./fig9.jpg> <./fig10.jpg>]
-<fig12.jpg, id=238, 3346.5025pt x 1667.22874pt>
+<fig12.jpg, id=235, 910.602pt x 382.42876pt>
 File: fig12.jpg Graphic file (type jpg)
  <use fig12.jpg>
-Package pdftex.def Info: fig12.jpg used on input line 244.
-(pdftex.def)             Requested size: 452.9679pt x 225.65128pt.
-
-<fig13.jpg, id=239, 3346.5025pt x 1636.1125pt>
+Package pdftex.def Info: fig12.jpg used on input line 242.
+(pdftex.def)             Requested size: 452.9679pt x 190.23355pt.
+ [12 <./fig11.jpg> <./fig10.jpg>] <fig13.jpg, id=246, 3346.5025pt x 1636.1125pt
+>
 File: fig13.jpg Graphic file (type jpg)
  <use fig13.jpg>
-Package pdftex.def Info: fig13.jpg used on input line 250.
+Package pdftex.def Info: fig13.jpg used on input line 248.
 (pdftex.def)             Requested size: 452.9679pt x 221.43985pt.
- [13 <./fig11.jpg> <./fig12.jpg>] <fig14.jpg, id=252, 3346.5025pt x 694.595pt>
+
+<fig14.jpg, id=249, 3346.5025pt x 694.595pt>
 File: fig14.jpg Graphic file (type jpg)
  <use fig14.jpg>
-Package pdftex.def Info: fig14.jpg used on input line 256.
+Package pdftex.def Info: fig14.jpg used on input line 254.
 (pdftex.def)             Requested size: 452.9679pt x 94.01004pt.
-
-[14 <./fig13.jpg> <./fig14.jpg>] <fig15.jpg, id=259, 3346.5025pt x 2091.815pt>
+ [13 <./fig12.jpg> <./fig13.jpg> <./fig14.jpg>] <fig15.jpg, id=257, 523.9575pt 
+x 280.04625pt>
 File: fig15.jpg Graphic file (type jpg)
 
 <use fig15.jpg>
-Package pdftex.def Info: fig15.jpg used on input line 279.
-(pdftex.def)             Requested size: 452.9679pt x 266.81207pt.
- <fig16.jpg, id=261, 3346.5025pt x 2091.815pt>
+Package pdftex.def Info: fig15.jpg used on input line 277.
+(pdftex.def)             Requested size: 452.9679pt x 214.79628pt.
+ [14] <fig16.jpg, id=265, 540.21825pt x 351.11176pt>
 File: fig16.jpg Graphic file (type jpg)
- <use fig16.jpg>
-Package pdftex.def Info: fig16.jpg used on input line 285.
-(pdftex.def)             Requested size: 452.9679pt x 266.81207pt.
 
-[15 <./fig15.jpg>] <fig17.jpg, id=271, 1244.65pt x 550.055pt>
+<use fig16.jpg>
+Package pdftex.def Info: fig16.jpg used on input line 283.
+(pdftex.def)             Requested size: 452.9679pt x 269.06694pt.
+ <fig17.jpg, id=268, 1244.65pt x 550.055pt>
 File: fig17.jpg Graphic file (type jpg)
  <use fig17.jpg>
-<<<<<<< HEAD
-Package pdftex.def Info: fig17.jpg used on input line 295.
-(pdftex.def)             Requested size: 452.9679pt x 200.18507pt.
-=======
-Package pdftex.def Info: fig17.jpg used on input line 289.
+Package pdftex.def Info: fig17.jpg used on input line 293.
 (pdftex.def)             Requested size: 373.39787pt x 165.01776pt.
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
 
-[16 <./fig16.jpg> <./fig17.jpg>]
-<fig18.jpg, id=281, 3346.5025pt x 1298.8525pt>
+[15 <./fig15.jpg> <./fig16.jpg>]
+<fig18.jpg, id=279, 1181.01225pt x 272.81924pt>
 File: fig18.jpg Graphic file (type jpg)
-<<<<<<< HEAD
-
-<use fig18.jpg>
-Package pdftex.def Info: fig18.jpg used on input line 303.
-=======
  <use fig18.jpg>
-Package pdftex.def Info: fig18.jpg used on input line 297.
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-(pdftex.def)             Requested size: 452.9679pt x 175.79335pt.
-<<<<<<< HEAD
-=======
- <fig19.jpg, id=282, 3346.5025pt x 1659.19875pt>
-File: fig19.jpg Graphic file (type jpg)
-<<<<<<< HEAD
+Package pdftex.def Info: fig18.jpg used on input line 301.
+(pdftex.def)             Requested size: 452.9679pt x 104.63817pt.
 
-<use fig19.jpg>
-Package pdftex.def Info: fig19.jpg used on input line 309.
-=======
-<<<<<<< HEAD
- <use fig19.jpg>
-Package pdftex.def Info: fig19.jpg used on input line 302.
-(pdftex.def)             Requested size: 452.9679pt x 224.56447pt.
- [17 <./fig17.jpg> <./fig18.jpg>] <fig20.jpg, id=285, 2668.97125pt x 659.46375p
-t>
-File: fig20.jpg Graphic file (type jpg)
-
-<use fig20.jpg>
-Package pdftex.def Info: fig20.jpg used on input line 308.
-(pdftex.def)             Requested size: 452.9679pt x 111.91615pt.
- [18 <./fig19.jpg> <./fig20.jpg>]
-<NMOcorr_over_under.jpg, id=295, 798.985pt x 451.6875pt>
-=======
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
-
-<fig19.jpg, id=282, 3346.5025pt x 1659.19875pt>
+<fig19.jpg, id=280, 1078.62975pt x 370.38374pt>
 File: fig19.jpg Graphic file (type jpg)
  <use fig19.jpg>
-Package pdftex.def Info: fig19.jpg used on input line 303.
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-(pdftex.def)             Requested size: 452.9679pt x 224.56447pt.
+Package pdftex.def Info: fig19.jpg used on input line 307.
+(pdftex.def)             Requested size: 452.9679pt x 155.53749pt.
 
-<fig20.jpg, id=285, 2668.97125pt x 659.46375pt>
+<fig20.jpg, id=283, 2668.97125pt x 659.46375pt>
 File: fig20.jpg Graphic file (type jpg)
  <use fig20.jpg>
-Package pdftex.def Info: fig20.jpg used on input line 319.
+Package pdftex.def Info: fig20.jpg used on input line 313.
 (pdftex.def)             Requested size: 452.9679pt x 111.91615pt.
-<<<<<<< HEAD
- [18 <./fig19.jpg> <./fig20.jpg>] <NMOcorr_over_under.jpg, id=300, 798.985pt x 
-451.6875pt>
-=======
-<<<<<<< HEAD
- [17 <./fig18.jpg> <./fig19.jpg>] [18 <./fig20.jpg>]
-<NMOcorr_over_under.jpg, id=298, 798.985pt x 451.6875pt>
-=======
- [18 <./fig19.jpg> <./fig20.jpg>] <NMOcorr_over_under.jpg, id=298, 798.985pt x 
-451.6875pt>
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+ [16 <./fig17.jpg> <./fig18.jpg> <./fig19.jpg>]
+<NMOcorr_over_under.jpg, id=294, 798.985pt x 451.6875pt>
 File: NMOcorr_over_under.jpg Graphic file (type jpg)
 
 <use NMOcorr_over_under.jpg>
-Package pdftex.def Info: NMOcorr_over_under.jpg used on input line 340.
+Package pdftex.def Info: NMOcorr_over_under.jpg used on input line 334.
 (pdftex.def)             Requested size: 452.9679pt x 256.07921pt.
-<<<<<<< HEAD
-
+ [17 <./fig20.jpg>]
 <Velo_anal_870.jpg, id=301, 581.17125pt x 345.29pt>
-=======
- [19 <./NMOcorr_over_under.jpg>]
-<<<<<<< HEAD
-<Velo_anal_870.jpg, id=311, 581.17125pt x 345.29pt>
-=======
-<<<<<<< HEAD
-<Velo_anal_870.jpg, id=307, 581.17125pt x 345.29pt>
 File: Velo_anal_870.jpg Graphic file (type jpg)
  <use Velo_anal_870.jpg>
-Package pdftex.def Info: Velo_anal_870.jpg used on input line 344.
+Package pdftex.def Info: Velo_anal_870.jpg used on input line 349.
 (pdftex.def)             Requested size: 452.9679pt x 269.1249pt.
 
-<Velo_anal_1190.jpg, id=308, 556.0775pt x 328.22626pt>
+[18 <./NMOcorr_over_under.jpg>]
+<Velo_anal_1190.jpg, id=313, 556.0775pt x 328.22626pt>
 File: Velo_anal_1190.jpg Graphic file (type jpg)
 
 <use Velo_anal_1190.jpg>
-Package pdftex.def Info: Velo_anal_1190.jpg used on input line 350.
+Package pdftex.def Info: Velo_anal_1190.jpg used on input line 355.
 (pdftex.def)             Requested size: 452.9679pt x 267.36931pt.
- [20 <./Velo_anal_870.jpg>]
-<beforeAfter_NMOcorr_870.jpg, id=318, 364.36125pt x 550.055pt>
+
+<beforeAfter_NMOcorr_870.jpg, id=316, 364.36125pt x 550.055pt>
 File: beforeAfter_NMOcorr_870.jpg Graphic file (type jpg)
 
 <use beforeAfter_NMOcorr_870.jpg>
-Package pdftex.def Info: beforeAfter_NMOcorr_870.jpg used on input line 358.
-=======
-<Velo_anal_870.jpg, id=310, 581.17125pt x 345.29pt>
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-File: Velo_anal_870.jpg Graphic file (type jpg)
- <use Velo_anal_870.jpg>
-Package pdftex.def Info: Velo_anal_870.jpg used on input line 355.
-(pdftex.def)             Requested size: 452.9679pt x 269.1249pt.
-
-<<<<<<< HEAD
-<Velo_anal_1190.jpg, id=312, 556.0775pt x 328.22626pt>
-=======
-[19 <./NMOcorr_over_under.jpg>]
-<Velo_anal_1190.jpg, id=315, 556.0775pt x 328.22626pt>
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-File: Velo_anal_1190.jpg Graphic file (type jpg)
-
-<use Velo_anal_1190.jpg>
-Package pdftex.def Info: Velo_anal_1190.jpg used on input line 361.
-(pdftex.def)             Requested size: 452.9679pt x 267.36931pt.
-<<<<<<< HEAD
- [20 <./Velo_anal_870.jpg>]
-<beforeAfter_NMOcorr_870.jpg, id=323, 364.36125pt x 550.055pt>
-=======
-
-<beforeAfter_NMOcorr_870.jpg, id=318, 364.36125pt x 550.055pt>
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-File: beforeAfter_NMOcorr_870.jpg Graphic file (type jpg)
-
-<use beforeAfter_NMOcorr_870.jpg>
-Package pdftex.def Info: beforeAfter_NMOcorr_870.jpg used on input line 369.
+Package pdftex.def Info: beforeAfter_NMOcorr_870.jpg used on input line 363.
 (pdftex.def)             Requested size: 452.9679pt x 683.84889pt.
-<<<<<<< HEAD
- [20 <./Velo_anal_870.jpg> <./Velo_anal_1190.jpg>]
-Overfull \vbox (5.34203pt too high) has occurred while \output is active []
-
-
-[21 <./beforeAfter_NMOcorr_870.jpg>]
-<beforeAfter_NMOcorr_1190.jpg, id=329, 427.5975pt x 631.35875pt>
-=======
- [21 <./Velo_anal_1190.jpg>]
+ [19 <./Velo_anal_870.jpg> <./Velo_anal_1190.jpg>]
 Overfull \vbox (17.34203pt too high) has occurred while \output is active []
 
 
-[22 <./beforeAfter_NMOcorr_870.jpg>]
-<beforeAfter_NMOcorr_1190.jpg, id=334, 427.5975pt x 631.35875pt>
+[20 <./beforeAfter_NMOcorr_870.jpg>]
+<beforeAfter_NMOcorr_1190.jpg, id=328, 427.5975pt x 631.35875pt>
 File: beforeAfter_NMOcorr_1190.jpg Graphic file (type jpg)
 
 <use beforeAfter_NMOcorr_1190.jpg>
-Package pdftex.def Info: beforeAfter_NMOcorr_1190.jpg used on input line 375.
+Package pdftex.def Info: beforeAfter_NMOcorr_1190.jpg used on input line 369.
 (pdftex.def)             Requested size: 452.9679pt x 668.82285pt.
 
 Overfull \vbox (2.31598pt too high) has occurred while \output is active []
 
 
-[23 <./beforeAfter_NMOcorr_1190.jpg>]
-<Velo_anal_example_870.jpg, id=341, 734.745pt x 461.725pt>
+[21 <./beforeAfter_NMOcorr_1190.jpg>]
+<Velo_anal_example_870.jpg, id=337, 734.745pt x 461.725pt>
 File: Velo_anal_example_870.jpg Graphic file (type jpg)
 
 <use Velo_anal_example_870.jpg>
-Package pdftex.def Info: Velo_anal_example_870.jpg used on input line 383.
+Package pdftex.def Info: Velo_anal_example_870.jpg used on input line 377.
 (pdftex.def)             Requested size: 452.9679pt x 284.6602pt.
 
-<Velo_anal_example_1190.jpg, id=342, 698.61pt x 443.6575pt>
+<Velo_anal_example_1190.jpg, id=338, 698.61pt x 443.6575pt>
 File: Velo_anal_example_1190.jpg Graphic file (type jpg)
 
 <use Velo_anal_example_1190.jpg>
-Package pdftex.def Info: Velo_anal_example_1190.jpg used on input line 389.
+Package pdftex.def Info: Velo_anal_example_1190.jpg used on input line 383.
 (pdftex.def)             Requested size: 452.9679pt x 287.66313pt.
- [24 <./Velo_anal_example_870.jpg>]
-<Velo_anal_smooth.jpg, id=349, 755.82375pt x 420.57124pt>
+ [22 <./Velo_anal_example_870.jpg>]
+<Velo_anal_smooth.jpg, id=345, 755.82375pt x 420.57124pt>
 File: Velo_anal_smooth.jpg Graphic file (type jpg)
 
 <use Velo_anal_smooth.jpg>
-Package pdftex.def Info: Velo_anal_smooth.jpg used on input line 399.
+Package pdftex.def Info: Velo_anal_smooth.jpg used on input line 393.
 (pdftex.def)             Requested size: 452.9679pt x 252.04948pt.
- [25 <./Velo_anal_example_1190.jpg>]
-<NMOcorr_stacking.jpg, id=357, 718.685pt x 326.21875pt>
+ [23 <./Velo_anal_example_1190.jpg>]
+<NMOcorr_stacking.jpg, id=352, 718.685pt x 326.21875pt>
 File: NMOcorr_stacking.jpg Graphic file (type jpg)
 
 <use NMOcorr_stacking.jpg>
-Package pdftex.def Info: NMOcorr_stacking.jpg used on input line 412.
-(pdftex.def)             Requested size: 452.9679pt x 205.61346pt.
- [26 <./Velo_anal_smooth.jpg>]
-<<<<<<< HEAD
-<fmig.jpg, id=366, 1914.15125pt x 1080.035pt>
-=======
-<fmig.jpg, id=361, 1914.15125pt x 1080.035pt>
+Package pdftex.def Info: NMOcorr_stacking.jpg used on input line 406.
+(pdftex.def)             Requested size: 287.4689pt x 130.48518pt.
+ [24 <./Velo_anal_smooth.jpg> <./NMOcorr_stacking.jpg>] [25] <fmig.jpg, id=367,
+ 1914.15125pt x 1080.035pt>
 File: fmig.jpg Graphic file (type jpg)
  <use fmig.jpg>
-Package pdftex.def Info: fmig.jpg used on input line 429.
+Package pdftex.def Info: fmig.jpg used on input line 438.
 (pdftex.def)             Requested size: 452.9679pt x 255.57162pt.
- [27 <./NMOcorr_stacking.jpg>] <types_of_migration.jpg, id=368, 818.05624pt x 3
-=======
-<beforeAfter_NMOcorr_1190.jpg, id=333, 427.5975pt x 631.35875pt>
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
-File: beforeAfter_NMOcorr_1190.jpg Graphic file (type jpg)
 
-<use beforeAfter_NMOcorr_1190.jpg>
-Package pdftex.def Info: beforeAfter_NMOcorr_1190.jpg used on input line 367.
-(pdftex.def)             Requested size: 452.9679pt x 668.82285pt.
- [22 <./beforeAfter_NMOcorr_1190.jpg>]
-<Velo_anal_example_870.jpg, id=336, 734.745pt x 461.725pt>
-File: Velo_anal_example_870.jpg Graphic file (type jpg)
-
-<use Velo_anal_example_870.jpg>
-Package pdftex.def Info: Velo_anal_example_870.jpg used on input line 375.
-(pdftex.def)             Requested size: 452.9679pt x 284.6602pt.
-
-<Velo_anal_example_1190.jpg, id=337, 698.61pt x 443.6575pt>
-File: Velo_anal_example_1190.jpg Graphic file (type jpg)
-
-<use Velo_anal_example_1190.jpg>
-Package pdftex.def Info: Velo_anal_example_1190.jpg used on input line 381.
-(pdftex.def)             Requested size: 452.9679pt x 287.66313pt.
- [23 <./Velo_anal_example_870.jpg> <./Velo_anal_example_1190.jpg>] <Velo_anal_s
-mooth.jpg, id=344, 755.82375pt x 420.57124pt>
-File: Velo_anal_smooth.jpg Graphic file (type jpg)
-
-<use Velo_anal_smooth.jpg>
-Package pdftex.def Info: Velo_anal_smooth.jpg used on input line 391.
-(pdftex.def)             Requested size: 452.9679pt x 252.04948pt.
-
-<NMOcorr_stacking.jpg, id=347, 718.685pt x 326.21875pt>
-File: NMOcorr_stacking.jpg Graphic file (type jpg)
-
-<use NMOcorr_stacking.jpg>
-Package pdftex.def Info: NMOcorr_stacking.jpg used on input line 404.
-(pdftex.def)             Requested size: 452.9679pt x 205.61346pt.
- [24 <./Velo_anal_smooth.jpg>]
-<fmig.jpg, id=356, 1914.15125pt x 1080.035pt>
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-File: fmig.jpg Graphic file (type jpg)
- <use fmig.jpg>
-Package pdftex.def Info: fmig.jpg used on input line 440.
-(pdftex.def)             Requested size: 452.9679pt x 255.57162pt.
-<<<<<<< HEAD
- [27 <./NMOcorr_stacking.jpg>] <types_of_migration.jpg, id=373, 818.05624pt x 3
-=======
-<<<<<<< HEAD
- [25 <./NMOcorr_stacking.jpg>] <types_of_migration.jpg, id=364, 818.05624pt x 3
-=======
- [26 <./NMOcorr_stacking.jpg>] <types_of_migration.jpg, id=368, 818.05624pt x 3
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
-70.38374pt>
+<types_of_migration.jpg, id=369, 818.05624pt x 370.38374pt>
 File: types_of_migration.jpg Graphic file (type jpg)
 
 <use types_of_migration.jpg>
-Package pdftex.def Info: types_of_migration.jpg used on input line 455.
+Package pdftex.def Info: types_of_migration.jpg used on input line 453.
 (pdftex.def)             Requested size: 327.21669pt x 148.15086pt.
- [28 <./fmig.jpg>]
-<<<<<<< HEAD
-<FDmed3aforkirchh.jpg, id=381, 1912.14375pt x 1080.035pt>
-=======
-=======
-Package pdftex.def Info: types_of_migration.jpg used on input line 447.
-(pdftex.def)             Requested size: 452.9679pt x 205.09067pt.
-<<<<<<< HEAD
  [26 <./fmig.jpg>]
-<FDmed3aforkirchh.jpg, id=372, 1912.14375pt x 1080.035pt>
-=======
- [27 <./fmig.jpg>]
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
-<FDmed3aforkirchh.jpg, id=376, 1912.14375pt x 1080.035pt>
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+<FDmed3aforkirchh.jpg, id=377, 1912.14375pt x 1080.035pt>
 File: FDmed3aforkirchh.jpg Graphic file (type jpg)
 
 <use FDmed3aforkirchh.jpg>
-Package pdftex.def Info: FDmed3aforkirchh.jpg used on input line 474.
+Package pdftex.def Info: FDmed3aforkirchh.jpg used on input line 473.
 (pdftex.def)             Requested size: 452.9679pt x 255.8353pt.
- [29 <./types_of_migration.jpg>]
-<<<<<<< HEAD
-<kirchhoffGeoClass.jpg, id=388, 497.86pt x 305.14pt>
-=======
-=======
-Package pdftex.def Info: FDmed3aforkirchh.jpg used on input line 466.
-(pdftex.def)             Requested size: 452.9679pt x 255.8353pt.
-<<<<<<< HEAD
  [27 <./types_of_migration.jpg>]
-<kirchhoffGeoClass.jpg, id=379, 497.86pt x 305.14pt>
-=======
- [28 <./types_of_migration.jpg>]
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
-<kirchhoffGeoClass.jpg, id=383, 497.86pt x 305.14pt>
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+<kirchhoffGeoClass.jpg, id=384, 497.86pt x 305.14pt>
 File: kirchhoffGeoClass.jpg Graphic file (type jpg)
 
 <use kirchhoffGeoClass.jpg>
 Package pdftex.def Info: kirchhoffGeoClass.jpg used on input line 484.
 (pdftex.def)             Requested size: 248.92938pt x 152.56961pt.
 
-<kirchhmed3aforkirchh.jpg, id=390, 1910.13625pt x 1079.03125pt>
+<kirchhmed3aforkirchh.jpg, id=386, 1910.13625pt x 1079.03125pt>
 File: kirchhmed3aforkirchh.jpg Graphic file (type jpg)
 
 <use kirchhmed3aforkirchh.jpg>
 Package pdftex.def Info: kirchhmed3aforkirchh.jpg used on input line 492.
 (pdftex.def)             Requested size: 452.9679pt x 255.87743pt.
- [30 <./FDmed3aforkirchh.jpg> <./kirchhoffGeoClass.jpg>] <ny1.jpg, id=399, 1092
+ [28 <./FDmed3aforkirchh.jpg> <./kirchhoffGeoClass.jpg>] <ny1.jpg, id=399, 1092
 .08pt x 615.29875pt>
 File: ny1.jpg Graphic file (type jpg)
  <use ny1.jpg>
 Package pdftex.def Info: ny1.jpg used on input line 504.
 (pdftex.def)             Requested size: 452.9679pt x 255.21277pt.
- [31 <./kirchhmed3aforkirchh.jpg>] <ny2.jpg, id=407, 1090.0725pt x 611.28375pt>
+ [29 <./kirchhmed3aforkirchh.jpg>] <ny2.jpg, id=406, 1090.0725pt x 611.28375pt>
 File: ny2.jpg Graphic file (type jpg)
  <use ny2.jpg>
 Package pdftex.def Info: ny2.jpg used on input line 510.
 (pdftex.def)             Requested size: 452.9679pt x 254.01381pt.
 
-<ny3.jpg, id=408, 1086.0575pt x 615.29875pt>
+<ny3.jpg, id=407, 1086.0575pt x 615.29875pt>
 File: ny3.jpg Graphic file (type jpg)
  <use ny3.jpg>
 Package pdftex.def Info: ny3.jpg used on input line 516.
 (pdftex.def)             Requested size: 452.9679pt x 256.63046pt.
- [32 <./ny1.jpg> <./ny2.jpg>] <ny4.jpg, id=414, 978.65625pt x 733.74126pt>
+ [30 <./ny1.jpg> <./ny2.jpg>] <ny4.jpg, id=413, 978.65625pt x 733.74126pt>
 File: ny4.jpg Graphic file (type jpg)
  <use ny4.jpg>
 Package pdftex.def Info: ny4.jpg used on input line 524.
 (pdftex.def)             Requested size: 452.9679pt x 339.61873pt.
- [33 <./ny3.jpg>] <ny5.jpg, id=426, 483.8075pt x 1043.9pt>
+ [31 <./ny3.jpg>] <ny5.jpg, id=426, 483.8075pt x 1043.9pt>
 File: ny5.jpg Graphic file (type jpg)
  <use ny5.jpg>
 Package pdftex.def Info: ny5.jpg used on input line 534.
 (pdftex.def)             Requested size: 193.51956pt x 417.5526pt.
- [34 <./ny4.jpg>]
+ [32 <./ny4.jpg>]
 <ny6.jpg, id=442, 538.01pt x 1039.885pt>
 File: ny6.jpg Graphic file (type jpg)
  <use ny6.jpg>
 Package pdftex.def Info: ny6.jpg used on input line 545.
 (pdftex.def)             Requested size: 215.20018pt x 415.94662pt.
- [35 <./ny5.jpg>]
+ [33 <./ny5.jpg>]
 <ny7.jpg, id=453, 775.89874pt x 1148.29pt>
 File: ny7.jpg Graphic file (type jpg)
  <use ny7.jpg>
 Package pdftex.def Info: ny7.jpg used on input line 555.
 (pdftex.def)             Requested size: 310.354pt x 459.30786pt.
- [36 <./ny6.jpg>]
-[37 <./ny7.jpg>] [38]
-<<<<<<< HEAD
-Overfull \hbox (35.49358pt too wide) in paragraph at lines 582--583
-=======
-Overfull \hbox (35.49358pt too wide) in paragraph at lines 569--570
-=======
-Package pdftex.def Info: kirchhoffGeoClass.jpg used on input line 476.
-(pdftex.def)             Requested size: 452.9679pt x 277.63126pt.
- [28 <./FDmed3aforkirchh.jpg> <./kirchhoffGeoClass.jpg>] <kirchhmed3aforkirchh.
-jpg, id=386, 1910.13625pt x 1079.03125pt>
-File: kirchhmed3aforkirchh.jpg Graphic file (type jpg)
-
-<use kirchhmed3aforkirchh.jpg>
-Package pdftex.def Info: kirchhmed3aforkirchh.jpg used on input line 484.
-(pdftex.def)             Requested size: 452.9679pt x 255.87743pt.
- <ny1.jpg, id=387, 1092.08pt x 615.29875pt>
-File: ny1.jpg Graphic file (type jpg)
-
-<use ny1.jpg>
-Package pdftex.def Info: ny1.jpg used on input line 494.
-(pdftex.def)             Requested size: 452.9679pt x 255.21277pt.
- [29 <./kirchhmed3aforkirchh.jpg>]
-<ny2.jpg, id=393, 1090.0725pt x 611.28375pt>
-File: ny2.jpg Graphic file (type jpg)
- <use ny2.jpg>
-Package pdftex.def Info: ny2.jpg used on input line 500.
-(pdftex.def)             Requested size: 452.9679pt x 254.01381pt.
-
-<ny3.jpg, id=394, 1086.0575pt x 615.29875pt>
-File: ny3.jpg Graphic file (type jpg)
- <use ny3.jpg>
-Package pdftex.def Info: ny3.jpg used on input line 506.
-(pdftex.def)             Requested size: 452.9679pt x 256.63046pt.
- [30 <./ny1.jpg> <./ny2.jpg>] <ny4.jpg, id=401, 978.65625pt x 733.74126pt>
-File: ny4.jpg Graphic file (type jpg)
- <use ny4.jpg>
-Package pdftex.def Info: ny4.jpg used on input line 514.
-(pdftex.def)             Requested size: 452.9679pt x 339.61873pt.
- [31 <./ny3.jpg>] <ny5.jpg, id=412, 483.8075pt x 1043.9pt>
-File: ny5.jpg Graphic file (type jpg)
- <use ny5.jpg>
-Package pdftex.def Info: ny5.jpg used on input line 526.
-(pdftex.def)             Requested size: 193.51956pt x 417.5526pt.
- [32 <./ny4.jpg>]
-<ny6.jpg, id=422, 538.01pt x 1039.885pt>
-File: ny6.jpg Graphic file (type jpg)
- <use ny6.jpg>
-Package pdftex.def Info: ny6.jpg used on input line 537.
-(pdftex.def)             Requested size: 215.20018pt x 415.94662pt.
- [33 <./ny5.jpg>]
-<ny7.jpg, id=432, 775.89874pt x 1148.29pt>
-File: ny7.jpg Graphic file (type jpg)
- <use ny7.jpg>
-Package pdftex.def Info: ny7.jpg used on input line 549.
-(pdftex.def)             Requested size: 310.354pt x 459.30786pt.
  [34 <./ny6.jpg>]
 [35 <./ny7.jpg>] [36]
-Overfull \hbox (35.49358pt too wide) in paragraph at lines 576--577
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+Overfull \hbox (35.49358pt too wide) in paragraph at lines 584--585
 []\OT1/cmr/m/n/10 XSGEO (2015) [On-line]. Hess Cor-po-ra-tion. Avail-able from:
  $\OML/cmm/m/it/10 < http \OT1/cmr/m/n/10 : \OML/cmm/m/it/10 ==www:xsgeo:com=co
 urse=acq:htm >$
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 586.
-[39]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 586.
- (ProjectArticle.aux)
-<<<<<<< HEAD
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 586.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 586.
-=======
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 573.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 573.
-=======
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 580.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 588.
 [37]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 580.
- (./ProjectArticle.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 580.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 580.
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 588.
+ (ProjectArticle.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 588.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 588.
 Package rerunfilecheck Info: File `ProjectArticle.out' has not changed.
 (rerunfilecheck)             Checksum: 8B2FFF5F96521057FEA677B402533F9E;1679.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 586.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 588.
  ) 
 Here is how much of TeX's memory you used:
- 10284 strings out of 493323
- 149731 string characters out of 3139066
- 270351 words of memory out of 3000000
+ 10282 strings out of 493323
+ 149717 string characters out of 3139066
+ 269351 words of memory out of 3000000
  13533 multiletter control sequences out of 15000+200000
  9912 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,40p,920b,381s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 36i,6n,40p,924b,378s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1442,53 +1171,9 @@ onts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 amsfonts/cm/cmr5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
 m/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-<<<<<<< HEAD
-Output written on ProjectArticle.pdf (39 pages, 35365239 bytes).
+Output written on ProjectArticle.pdf (37 pages, 20693589 bytes).
 PDF statistics:
  538 PDF objects out of 1000 (max. 8388607)
- 113 named destinations out of 1000 (max. 500000)
- 457 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-Output written on ProjectArticle.pdf (39 pages, 35187260 bytes).
-PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
- 112 named destinations out of 1000 (max. 500000)
-=======
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 580.
- ) 
-Here is how much of TeX's memory you used:
- 10275 strings out of 492995
- 150108 string characters out of 6132704
- 269701 words of memory out of 5000000
- 13543 multiletter control sequences out of 15000+600000
- 9912 words of font info for 37 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 36i,6n,40p,917b,384s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-/usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></us
-r/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
-local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loc
-al/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb>
-Output written on ProjectArticle.pdf (37 pages, 35141005 bytes).
-PDF statistics:
-<<<<<<< HEAD
- 519 PDF objects out of 1000 (max. 8388607)
- 406 compressed objects within 5 object streams
- 110 named destinations out of 1000 (max. 500000)
-=======
- 523 PDF objects out of 1000 (max. 8388607)
- 409 compressed objects within 5 object streams
  111 named destinations out of 1000 (max. 500000)
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
->>>>>>> b58dd39edad50015710bc3bb30242bb626fcb8db
- 452 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 4cdbbe8e8e76328d93c2e87de126ba7276ff4078
+ 457 words of extra memory for PDF output out of 10000 (max. 10000000)
 

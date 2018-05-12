@@ -61,7 +61,7 @@ Authors: Robin David Kifle, Julie Linnea Gresseth, Sander Losnedahl
 {\large\bf Abstract}
 \end{center}
 
-\noindent Seismic data is used to get an understanding of the subsurface, but many processes must be applied to the raw data for the image to be a sufficiently accurate depiction of the subsurface. This paper presents a workflow where different processing techniques like muting, amplitude recovery, bandpass filtering, deconvolution, NMO-correction, stacking and migration are applied to a raw data set in the ProMax software. The paper has found that a combination of the above techniques yields good results and removes effects like direct wave and top refractors, unwanted frequencies, multiples, normal move-out, dipping reflectors and diffraction hyperbolas. Two types of post-stack time-migration were used (finite-difference and Kirchhoff). They both gave similar results, but important differences, related to a saltdiapir and muting-effects, were also found and discussed in this paper.
+\noindent Seismic data is used to get an understanding of the subsurface, but many processes must be applied to the raw data for the image to be a sufficiently accurate depiction of the subsurface. This paper presents a workflow where different processing techniques like muting, amplitude recovery, bandpass filtering, deconvolution, NMO-correction, stacking and migration are applied to a raw data set in the ProMax software. The paper has found that a combination of the above techniques yields good results and removes effects like direct wave and top refractors, unwanted frequencies, multiples, normal move-out, dipping reflectors and diffraction hyperbolas. Two types of post-stack time-migration were used (Finite-Difference and Kirchhoff). They both gave similar results, but important differences, related to a saltdiapir and muting-effects, were also found and are discussed in this paper.
 
 \newpage
 
@@ -71,13 +71,7 @@ Authors: Robin David Kifle, Julie Linnea Gresseth, Sander Losnedahl
 
 \section{Introduction}
 
-Seismic processing consists of employing algorithms to recorded data in order to obtain an image that represent the subsurface and facilitates seismic interpretation. The received seismic response is a combination of the source pulse, the Earths response and background noise. The main goal of the project is to get to know the workflow needed to get good results in terms of seismic imaging, by using the ProMAX software for processing one 2D line.
-
-
-\section{Preprocessing and CMP-sorting}
-
-With aim to generate a dataset better suited for further processing, preprocessing entails editing inadequate measurements, applying datuming and introducing wavelet corrections.\\
-Usually the data have also gone through an anti-aliasing filter, and is carefully resampled to reduce the amount of data. A broad bandpass filter removing very low ($<2Hz$) frequencies and very high frequencies might also have been used.
+Seismic processing consists of employing algorithms to recorded data in order to obtain an image that represent the subsurface and facilitates seismic interpretation. The received seismic response is a combination of the source pulse, the Earths impulse response and background noise. The main goal of the project is to understand the workflow (figure \ref{wf}) needed to get good results in terms of seismic imaging, by using the ProMAX software for processing one 2D line.
 
 \begin{figure}[H]
 \centering
@@ -86,9 +80,16 @@ Usually the data have also gone through an anti-aliasing filter, and is carefull
 \label{wf}
 \end{figure}
 
+
+\section{Preprocessing and CMP-sorting}
+
+With aim to generate a dataset better suited for further processing, preprocessing entails editing inadequate measurements, applying datuming and introducing wavelet corrections.
+\\
+Usually the data have also gone through an anti-aliasing filter, and is carefully resampled to reduce the amount of data. A broad bandpass filter removing very low ($<2Hz$) frequencies and very high frequencies might also be applied.
+\\
 The seismic data have been acquired in the source-receiver domain. The data needs to be resorted into CMP (common midpoint) gathers. Promax uses the abbreviation CDP (common depth point), even though CDP and CMP are only equivalent for horizontally layered reflectors.
 \\
-\noindent Seismic data acquisition is performed with a source and a receiver, giving a dataset consisting of several traces with various offsets and midpoints. CMP sorting is performed to resort the dataset in a midpoint-offset-domain, see figure \ref{fig1} for illustration. Traces with a common midpoint between sources and receivers are orderly gathered in CMP-gathers (Gelius, 2018a).
+Seismic data acquisition is performed with a source and a receiver, giving a dataset consisting of several traces with various offsets and midpoints. CMP sorting is performed to resort the dataset in a midpoint-offset-domain, see figure \ref{fig1} for illustration. Traces with a common midpoint between sources and receivers are orderly gathered in CMP-gathers (Gelius, 2018a).
 
 
 \begin{figure}[H]
@@ -100,7 +101,7 @@ The seismic data have been acquired in the source-receiver domain. The data need
 
 \subsection{Raw Data}
 
-Raw seismic data containing traces of both direct, reflected and refracted waves, was converted from SEG-Y format to an internal processing format applicable in ProMAX. Maximum traces per ensemble was set to 240, and domain set to midpoint-offset. The output raw seismic data of CMP 1000 and CMP 1500 is shown in figure \ref{fig2}.
+Raw seismic data containing traces of both direct, reflected and refracted waves, was converted from SEG-Y format to an internal processing format applicable in ProMAX. Maximum traces per ensemble was set to 240, and domain set to midpoint-offset. The output raw seismic data of CMP 1000 and CMP 1500 is shown in figure \ref{fig2} and \ref{rawWiggle}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig2.jpg}
@@ -110,21 +111,31 @@ Raw seismic data containing traces of both direct, reflected and refracted waves
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{rawWiggle.jpg}
-\caption{Raw data of CMP 1000 (left) and 1500 (right) as wiggle trace.}
+\caption{Raw data of CMP 1500 as wiggle traces.}
 \label{rawWiggle}
 \end{figure}
+
+\newpage
 
 \section{Near Trace Stack}
 
 \subsection{Common Midpoint (CMP/Ensamble) Stack}
 
-A stack may be defined as a processed seismic record that consists of a series of traces that have been added together. Stacking is performed to improve the signal-to-noise (S/N)-ratio and improve overall data quality. The number of traces added together is referred to as the fold, where a higher fold provides enhanced resolution (Gillis, 2018a; Gelius, 2018a).
+A stack may be defined as a processed seismic record that consists of multiple traces that have been added together. Stacking is performed to improve the signal-to-noise (S/N)-ratio and improve overall data quality. The number of traces added together is called a fold, where a greater fold provides enhanced resolution (Gillis, 2018a; Gelius, 2018a).
 \\
-A CMP stack is hence generated by adding together CMP-data at different offsets and a common reflection point, to form a single trace. A near-trace stack was made using only the traces closest to the air gun array (108-133 meters) without further processing of the data, see figure \ref{fig3}. The following observations were made:
+A CMP stack is hence generated by adding together CMP-data at different offsets and a common reflection point, to form a single trace. A near-trace stack was made using only the traces closest to the air gun array (108-133 meters) without further processing of the data, see figure \ref{fig3}.
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth, trim={0.3cm 0.8cm 0.2cm 0.5cm},clip]{fig3.jpg}
+\caption{Near-trace stack prior to scaling. Strong amplitudes are solemnly found at low travel times and appear progressively weaker with increasing travel time. The contours of a dome structure is visible in the centre of image, but vertical extent is hard to determine due to lacking imaging at higher travel times.}
+\label{fig3}
+\end{figure}
+
+\noindent The following observations were made:
 
 \begin{itemize}
     \item strong amplitudes at low travel times, increasing amplitude loss with higher travel time
-    \item the outline of a domal structure is observed also at kiw travel times, but vertical extent is somewhat ambiguous due to lack of amplitude at higher travel times.
+    \item the outline of a domal structure is observed also at low travel times, but vertical extent is somewhat ambiguous due to lack of amplitude at higher travel times.
 \end{itemize}
 
 \subsection{Amplitude Recovery}
@@ -132,37 +143,28 @@ A CMP stack is hence generated by adding together CMP-data at different offsets 
 Amplitude recovery aims to correct for amplitude loss, which may be caused by three major factors:
 
 \begin{itemize}
-    \item geometrical spreading: progressive decay of wave energy caused by increasing wavefront area as the wave propagates ($\frac{1}{•t^2}$).
+    \item geometrical spreading: progressive decay of wave energy caused by increasing wavefront area as the wave propagates ($\frac{1}{t^2}$).
     \item intrinsic attenuation/anelasticity: energy loss due to internal friction which causes conversion of some of the seismic elastic energy to heat.
     \item transmission losses: loss of wave amplitude due to reflection at interfaces (Gelius, 2018a).
 \end{itemize}
 
 \noindent To correct for amplitude attenuation several approaches may be employed. These are generally divided into two categories:
 \\
-\\
 {\bf Deterministic approach}
 \\
 The t-square model is one amongst several deterministic approaches, using the fact that geometrical spreading scales the wave amplitude as $\frac{1}{r}$ and the wave energy as $\frac{1}{r^2}$, where r is distance from the source. Assuming a constant velocity, the travel time t is then proportional to the distance r. A correction factor of $t^a$, where a is an integer, may be used. This results in an amplitude adjustment in the form of scaling the deeper parts of the data more than the upper part.
 \\
-\\
 {\bf Statistical Approach}
 \\
-One type of statistical amplitude recovery commonly used is the Automatic Gain Control (AGC), applied to account for energy loss at higher travel times. This is referred to as scaling since the traces at higher travel time and lower travel time are disproportionately scaled to regain reflector energy and obtain visibility (Gelius, 2018a; Gillis, 2018b). The result of AGC scaling may be seen in figure \ref{fig4}
+One type of statistical amplitude recovery commonly used is the Automatic Gain Control (AGC), applied to account for energy loss at higher travel times. This is referred to as scaling since the traces at higher travel time and lower travel time are disproportionately scaled to regain reflector energy and obtain visibility (Gelius, 2018a; Gillis, 2018b). The result of AGC scaling may be seen in figure \ref{fig4}.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth, trim={1.5cm 1.5cm 1cm 1.5cm},clip]{fig3.jpg}
-\caption{Near-trace stack prior to scaling. Strong amplitudes are solemnly found at low travel times and appear progressively weaker with increasing travel time. The contours of a dome structure is visible in the centre of image, but vertical extent is hard to determine due to lacking imaging at higher travel times.}
-\label{fig3}
-\end{figure}
-
-\begin{figure}[H]
-\includegraphics[width=\textwidth, trim={1.5cm 1.5cm 1cm 1.5cm},clip]{fig4.jpg}
+\includegraphics[width=\textwidth, trim={0.5cm 0.8cm 0.2cm 0.5cm},clip]{fig4.jpg}
 \caption{Near-trace-stack after scaling, showing recovered amplitudes at higher travel times. Strong reflectors are revealed at higher travel times, defining the contours of the dome structure, thus generating a better image of the subsurface.}
 \label{fig4}
 \end{figure}
 
-
-\noindent By comparing figure \ref{fig3} and \ref{fig4}, the effect of amplitude recovery is highly detectable. In figure \ref{fig4} amplitudes are amplified at larger travel times, and thus shows displays increasing visibility of later arriving events, not previously visible. The recovered reflectors shows varying amplitudes through seemingly sedimentary layers. The outline of the domal structure is visible at higher travel times, showing what at first glance resembles a salt dome with great vertical extent.
+\noindent By comparing figure \ref{fig3} and \ref{fig4}, the effect of amplitude recovery is highly detectable. In figure \ref{fig4} amplitudes are amplified at higher travel times, and thus shows displays increasing visibility of later arriving events, not previously visible. The recovered reflectors shows varying amplitudes through seemingly sedimentary layers. The outline of the domal structure is visible at higher travel times, showing what at first glance resembles a salt dome with great vertical extent.
 
 \section{Data Processing}
 
@@ -170,7 +172,7 @@ One type of statistical amplitude recovery commonly used is the Automatic Gain C
 
 Muting removes data above (or below) a certain time gradient, aiming to improve data quality by removing noise in the dataset.
 \\
-A mute function was applied to the raw dataset, removing the effects of the direct and refracted waves prior to deconvolution. A time gradient was given as input and a top mute was applied, removing all trace-values above this line. Applying a too strong or too mild time gradient preserves too much or too little of the traces at low travel times in the CMP-gather, respectively. A proper choice of mute function leads to only a few, but clear traces at low travel times, see figure \ref{fig5} for examples. Removing the direct wave and top refractors improves the S/N ratio.
+A mute function was applied to the raw dataset, removing the effects of the direct and refracted waves. A time gradient was given as input and a top mute was applied, removing all trace-values above this line. Applying a too strong or too mild time gradient preserves too much or too little of the traces at low travel times in the CMP-gather, respectively. A proper choice of mute function leads to only a few, but clear traces at low travel times, see figure \ref{fig5} for examples. Removing the direct wave and top refractors improves the S/N ratio.
 
 
 \begin{figure}[H]
@@ -180,10 +182,10 @@ A mute function was applied to the raw dataset, removing the effects of the dire
 \end{figure}
 
 
-\noindent To address challenges related to amplitude attenuation/energy loss (discussed in chapter 2.2), amplitude recovery through scaling was performed on the data. True Amplitude Recovery, a ProMax-function based on the t-square model, was used to recover amplitudes in the deeper section (ProMax, 2018). The integer factor a was set to 3. The results of muting and scaling for CMP 1000 and CMP 1500 can be seen in figure \ref{fig6}.  
+\noindent To address challenges related to amplitude attenuation/energy loss, amplitude recovery through scaling was performed on the data. True Amplitude Recovery, a ProMax-function based on the t-square model, was used to recover amplitudes in the larger travel times (ProMax, 2018). The integer factor a was set to 3 ($t^3$). The results of muting and scaling for CMP 1000 and CMP 1500 can be seen in figure \ref{fig6}.  
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth, trim={1.5cm 1.5cm 1cm 1.5cm},clip]{fig6.jpg}
+\includegraphics[width=\textwidth, trim={0.7cm 0.8cm 0.2cm 0.5cm},clip]{fig6.jpg}
 \caption{CMP 1000 (left) and 1500 (right) after both scaling and muting.}
 \label{fig6}
 \end{figure}
@@ -191,8 +193,7 @@ A mute function was applied to the raw dataset, removing the effects of the dire
 \noindent To more accurately compare data, wiggle-trace and plot equalization are used. The wiggle trace displays variations with positive fill in each trace relative to the x-axis corresponding to its receiver location, figure \ref{fig7}. 
 The purpose of this display is to also show the weaker reflections and their correlative changes (Gelius, 2018a). 
 \\
-Figure \ref{fig8} illustrate through a zoomed section of \ref{fig7} the effects of muting and scaling for CMP 1500. While applying a mute function effectively removed direct and top refracted rays, the scaling removed the effect of seismic attenuation by recovering amplitudes at larger travel times. 
-
+Figure \ref{fig8} illustrate through a zoomed section of figure \ref{fig7} the effects of muting and scaling for CMP 1500. While applying a mute function effectively removed direct and top refracted rays, the scaling removed the effect of seismic attenuation by recovering amplitudes at larger travel times. 
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig7ekte.jpg}
@@ -208,20 +209,19 @@ Figure \ref{fig8} illustrate through a zoomed section of \ref{fig7} the effects 
 
 \subsection{Bandpass Filtering}
 
-
-To enhance the desired signal and remove noise, filters are applied to the seismic data. Bandpass filters effectively remove unwanted parts of the data through passing only frequencies within a specific range, rejecting excessive frequencies. The aim is to remove ambient noise, such as the high frequencies produced by weather conditions, vibrations from machinery, platforms and passing vessels. The most facile way of constructing a bandpass filter is by defining it as a difference between two low-pass filters (Gelius, 2018a). 
+To enhance the signal and remove noise, filters are applied to the seismic data. Bandpass filters effectively remove unwanted parts of the data through passing only frequencies within a specific range, rejecting excessive frequencies. The aim is to remove ambient noise, such as the high frequencies produced by weather conditions, vibrations from machinery, platforms and passing vessels. The most facile way of constructing a bandpass filter is by defining it as a difference between two low-pass filters (Gelius, 2018a). 
 \\
 Two commonly used bandpass filters are the Butterworth and Ormsby-filters (Gelius 2018a). The Butterworth filter is recognized as a box-shaped filter in the frequency domain. For this exercise however, the Ormsby filter [f1, f2, f3, f4] was applied, which is a filter of trapezoidal shape where the corner frequencies define the range of the bandpass. The corners are denoted f1: low-cut frequency, f2: low-pass frequency, f3: high-pass frequency and f4: high-cut frequency, see figure \ref{fig9}.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{fig9.jpg}
+\includegraphics[scale=0.1]{fig9.jpg}
 \caption{Illustration of the characteristics of the boxshaped Butterworth (left) and trapezoidal Ormsby (right) -filters. A: amplitude, F: frequency.}
 \label{fig9}
 \end{figure}
 
+\newpage
 
 \noindent If the slopes of the filter are too steep, the filter will act as a box-window and Gibb’s phenomenon may occur. The sinc-function may cause signal distortion in the form of oscillations corroding the amplitude spectrum, see figure \ref{fig10}. Optimally, such artifacts ought to be minimized by setting the f2-f3 interval significantly shorter than f1-f4, ensuring a trapezoidal rather than a box-shaped filter.
-
 
 \begin{figure}[H]
 \centering
@@ -231,14 +231,12 @@ Two commonly used bandpass filters are the Butterworth and Ormsby-filters (Geliu
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth, trim={1.5cm 1.5cm 1cm 1.5cm},clip]{fig11.jpg}
+\includegraphics[width=\textwidth, trim={0.6cm 1cm 0.1cm 0.7cm},clip]{fig11.jpg}
 \caption{CMP 1000 and 1500 after scaling, muting and also bandpass filtering by employing the Ormsby-filter.}
 \label{fig11}
 \end{figure}
 
-\noindent Figure \ref{fig11} shows the data after bandpass filtering with a trapezoidal shape using filter [f1, f2, f3, f4] = [5, 10, 55, 65].
-\\
-Figure \ref{fig12} shows data in wiggle trace before and after bandpass filtering, figure \ref{fig13} - \ref{fig14} shows the effect in zoomed sections. The figures show improved imaging through removal of high and low frequencies deemed to be noise, leaving the main reflectors more visible.
+\noindent Figure \ref{fig11} shows the data after bandpass filtering with a trapezoidal shape using filter [f1, f2, f3, f4] = [5, 10, 55, 65]. Figure \ref{fig12} shows data in wiggle trace before and after bandpass filtering and figure \ref{fig13} - \ref{fig14} shows the effect in zoomed sections. The figures show improved imaging through removal of high and low frequencies deemed to be noise, leaving the main reflectors more visible.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig12.jpg}
@@ -248,7 +246,7 @@ Figure \ref{fig12} shows data in wiggle trace before and after bandpass filterin
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig13.jpg}
-\caption{Comparison of CMP 1500 before (left) and after (right) employing the Ormsby-filter, from traveltimes 1200 - 2400 ms. Areas with clearly visible effect is marked in red box, which also is displayed as zoomed section in figure \ref{fig14}.}
+\caption{Comparison of CMP 1500 before (left) and after (right) employing the Ormsby-filter, from traveltimes 1200 - 2400 ms. Areas with clearly visible effect is marked in red box, which also is displayed as a zoomed section in figure \ref{fig14}.}
 \label{fig13}
 \end{figure}
 
@@ -276,13 +274,13 @@ Figure \ref{fig15} and \ref{fig16} displays the autocorrelation without and with
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=\textwidth, trim={2cm 4cm 1cm 2cm},clip]{fig15.jpg}
+\includegraphics[width=\textwidth, trim={0.4cm 0.8cm 0cm 0.5cm},clip]{fig15.jpg}
 \caption{Auto-correlation of CMP 1500 without applying deconvolution.}
 \label{fig15}
 \end{figure}
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth, trim={2cm 4cm 1cm 2cm},clip]{fig16.jpg}
+\includegraphics[width=\textwidth, trim={0.4cm 0.8cm 0cm 0.5cm},clip]{fig16.jpg}
 \caption{Autocorrelation of CMP 1500 after applying deconvolution.}
 \label{fig16}
 \end{figure}
@@ -307,11 +305,7 @@ Figure \ref{fig15} and \ref{fig16} displays the autocorrelation without and with
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{fig19.jpg}
-<<<<<<< HEAD
-\caption{CMP 1500 before (left) and after (right) deconvolution. Notice how multiples are heavily reduced during deconvolution.}
-=======
 \caption{CMP 1500 before (left) and after (right) deconvolution. Red boxes markes zoomed sections in figure \ref{fig20}. Notice how multiples are heavily reduced during deconvolution.}
->>>>>>> 7ddcb80e9c4ad03caaa445d84be31e912a270d9f
 \label{fig19}
 \end{figure}
 
@@ -326,19 +320,19 @@ Figure \ref{fig15} and \ref{fig16} displays the autocorrelation without and with
 
 \subsection{Velocity Analysis}
 
-Prior to stacking, NMO-correction need to be applied to the different gathers. To ensure the most accurate NMO-corrections, a velocity analysis is performed. The chosen velocity is called the stacking velocity, which forms the basis for the velocity model. Employing a good velocity model creates a good basis for stacking, and thus also accurate travel time-depth conversion and migration (Baird Petrophysical, 2005).
+Prior to stacking, NMO-correction needs to be applied to the different gathers. To ensure the most accurate NMO-corrections, a velocity analysis is performed. The chosen velocity is called the stacking velocity, which forms the basis for the velocity model. Employing a good velocity model creates a good basis for stacking, and thus also accurate travel time-depth conversion and migration (Baird Petrophysical, 2005).
 \\
 The analysis consists of trying to determine the velocity distribution through the the model as a function of time (ProMAX, 2018; Gelius, 2018a). When fitting the data into a NMO-velocity model one assumes a horizontally layered earth model, and that the offsets are small spread. All offsets in the CMP-gather are used with intent to fit the reflections to an optimal hyperbolic traveltime model (Gelius, 2018a). 
 \\
 Correcting and stacking CMP-data for many different velocities within discrete time windows repeatedly is a common form of velocity analysis. As a general rule, the guiding velocity function is picked to go through areas with the highest semblance values (Gelius, 2018a).
 \\
-During this workflow, velocity analysis was performed on 12 equally spaced CMPs over the entire model. It was carried out by manually picking velocities using the semblance panel, with intent to generate the optimal correction of the CMP-gather resulting in horizontal primary reflectors. Picking velocities involve choosing points in the semblance panel with as high semblance values as possible without deviating excessively from the provided velocity guide function. Implicitly, this assumes meagre lateral variations in geology, coinciding with the velocity functions being calculated assuming small variations in velocity change. The manually picked velocities on the 12 CMPs are further interpolated between these gathers.
+During this workflow, velocity analysis was performed on 12 equally spaced CMPs over the entire model. It was carried out by manually picking velocities using the semblance panel, with intent to generate the optimal correction of the CMP-gather resulting in horizontal primary reflectors. Picking velocities involve choosing points in the semblance panel with as high semblance values as possible without deviating excessively from the velocity guide function. Implicitly, this assumes meagre lateral variations in geology, coinciding with the velocity functions being calculated assuming small variations in velocity change. The manually picked velocities on the 12 CMPs are further interpolated between these gathers.
 \\
 Striving for as high semblance as possible consequently minimizes risk of over- or undercorrection. If velocities are too high, this leads to undercorrection of the reflectors causing the reflectors to curve downwards. On the other hand, if velocities are too low, this causes upwards curvature due to overcorrection of the reflectors, see figure \ref{NMOoverunder}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{NMOcorr_over_under.jpg}
-\caption{Illustration of over and under-corrected traces. (a) and (d) are under-corrected, (b) is perfectly corrected and (c) is over-corrected}
+\caption{Illustration of over and under-corrected traces. (a) is uncorrected, (b) is perfectly corrected, (c) is over-corrected and (d) is under-corrected}
 \label{NMOoverunder}
 \end{figure}
 
@@ -347,8 +341,8 @@ Striving for as high semblance as possible consequently minimizes risk of over- 
 \begin{enumerate}
     \item Velocity spectrum/semblance panel: showing variations in velocities and their semblance to the velocity model. The highest semblance is marked with red colour
     \item Gather panel: CMP, time vs. offset
-    \item Dynamic stackpanel: showing mini-stacks based on the velocities picked using the semblance panel
-    \item Function stack panel: showing mini-stacks based on one single velocity function with a constant velocity (constant velocity stacks) (Gelius, 2018a; ProMax, 2018)
+    \item Dynamic stackpanel: showing mini-stack based on the velocities picked using the semblance panel
+    \item Function stack panel: showing all mini-stacks based on one single velocity function (Gelius, 2018a; ProMax, 2018)
 \end{enumerate}
 
 \begin{figure}[H]
@@ -363,7 +357,7 @@ Striving for as high semblance as possible consequently minimizes risk of over- 
 \label{VA1190}
 \end{figure}
 
-\noindent The result of the velocity analysis and corresponding NMO correction for CMP 870 and 1190 are shown in figure \ref{NMO870} - \ref{NMO1190}.
+\noindent The result of the velocity analysis and corresponding NMO-correction for CMP 870 and 1190 are shown in figure \ref{NMO870} - \ref{NMO1190}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{beforeAfter_NMOcorr_870.jpg}
@@ -377,7 +371,7 @@ Striving for as high semblance as possible consequently minimizes risk of over- 
 \label{NMO1190}
 \end{figure}
 
-\noindent Satisfactory alignment of the traces may be seen at low offsets, indicating successful NMO. At increasing offsets however, the NMO-correction seems less accurate and tendencies of over and undercorrection may be observed, see figures \ref{VA870ex} - \ref{VA1190ex}.
+\noindent Satisfactory alignment of the traces may be seen at low offsets, indicating a successful NMO-correction. At increasing offsets however, the NMO-correction seems less accurate and tendencies of over and undercorrection may be observed. As can be seen from figures \ref{VA870ex} - \ref{VA1190ex}, this occurs where the velocity model does not coincide with the highest semblance, see semblance panels. In figure \ref{VA870ex} the velocity model has higher velocity than what the semblance panel proposes, causing undercorrection. In figure \ref{VA1190ex}, however, the opposite effect may be observed due to the velocity model having lower velocity than proposed by the semblance panel, leading to overcorrection.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{Velo_anal_example_870.jpg}
@@ -406,20 +400,22 @@ As the velocity analysis was performed using the CMP-method, the analysis assume
 
 \subsection{NMO-correction and Stacking}
 
-Successive shots in a marine CMP-gather increases travel time for the respective seismic waves between source and receiver, which is reflected in the delay of the seismic traces. The additional traveltime are called normal moveout (NMO) and this must be corrected for, see figure \ref{NMOS}.
+Successive shots in a marine CMP-gather increases travel time for the respective seismic waves between source and receiver, which is reflected in the delay of the seismic traces. The additional traveltime is called normal moveout (NMO) and this must be corrected for, see figure \ref{NMOS}.
 
 \begin{figure}[H]
-\includegraphics[width=\textwidth]{NMOcorr_stacking.jpg}
+\includegraphics[scale=0.4]{NMOcorr_stacking.jpg}
 \caption{Illustration of how NMO-correction and stacking works in theory. The traces are aligned at different offsets and then added together in the stacking process.}
 \label{NMOS}
 \end{figure}
+
+\newpage
 
 \noindent The NMO-correction effectively repositions the traces to a lower TWT at the different offsets. The amount of repositioning is determined by the equation where the $v_{nmo}$ is identified by velocity analysis:
 $$
 \Delta t = t(x) - t_0 = \sqrt{t_0^2 + \frac{x^2}{v_{nmo}^2}}-t_0
 $$
 
-This equation holds two major assumptions:
+\noindent This equation holds two major assumptions:
 
 \begin{itemize}
     \item A flat earth model (no dip correction)
@@ -431,6 +427,8 @@ This equation holds two major assumptions:
 Given a constant velocity $v_{nmo}$ and offset x, the correction $\Delta t$ becomes smaller when $t_0$ becomes larger. NMO is also non-linear with respect to offset and travel time. This tells us that the correction is far from constant along a trace, and the correction becomes more extrusive for larger offset or shallow depths with lower velocity. This leads to NMO-stretching. These stretches are easily muted after the NMO-correction.
 \\
 Stacking is then performed on the NMO-corrected traces in the CMP-gathers. The result of the stacking is thus dependant on the quality of the velocity analysis.
+
+\newpage
 
 \section{Migration}
 
@@ -463,12 +461,13 @@ After muting, scaling, filtering, autocorrelation and deconvolution, velocity an
 
 \subsection{Finite Difference (FD) Migration}
 
-\noindent FD-migration is based on parabolic approximations of the wave-equation, and can be used to recursively implement downward extrapolations, still handling lateral velocity changes.\\
+\noindent FD-migration is based on parabolic approximations of the wave-equation. Several degrees ($15^{\circ}$ or $45^{\circ}$) of the parabolic approximation exists and can be used to recursively implement downward extrapolations. The degree determines what degree of dip the migration can handle and image (Gelius, 2018b).
+\\
 FD-migration may be implemented in time with dip limitation, by retaining the thin-lense term of the scalar wave equation. FD-migration may also be implemented on steep dips in depth-migration (Gelius, 2018b).
 \\
 Finite Difference depth-migration (FDDM) can handle significantly large lateral velocity variations, but is highly sensitive to inaccurate migration velocity. Finite Difference time-migration (FDTM) however, can handle only somewhat lateral velocity variations. This requires that the lateral variations are smooth and much smaller than the vertical variations. However, caution is required when performing the migration as FDTM-schemes may cause dispersion effects and contain dip-angle limitations (Gelius, 2018b). 
 \\
-As the FD-migration is employed in the time domain for this workflow, the $45^{\circ}$ max dip approximation was used. This means that the scheme can handle dips up $45^{\circ}$,. The result of FDTM can be seen in Figure \ref{FDTM}.
+As the FD-migration is employed in the time domain for this workflow, the $45^{\circ}$ max dip approximation was used. This means that the scheme can handle dips up $45^{\circ}$. The result of FDTM can be seen in Figure \ref{FDTM}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{FDmed3aforkirchh.jpg}
@@ -481,12 +480,13 @@ As the FD-migration is employed in the time domain for this workflow, the $45^{\
 The Kirchhoff migration algorithm tries to make a hyperbola that has the best fit with the traces, to then stack all the trace values at the apex of the hyperbola (Figure \ref{KGeoClass}). 
 
 \begin{figure}[H]
+\centering
 \includegraphics[scale=0.5]{kirchhoffGeoClass.jpg}
-\caption{Illustration of how Kirchhoff-migration is stacking traces at the apex of a fitted hyperbola}
+\caption{Illustration of how Kirchhoff-migration is stacking traces at the apex of a fitted hyperbola (Gelius, 2018b)}
 \label{KGeoClass}
 \end{figure}
 
-\noindent The Kirchhoff migration made in ProMax relies on the velocity function containing the stacking velocities, unlike FD which relies on the migration velocity function which is based on interval velocity. The result of Kirchhoff can be seen on Figure \ref{KTM}.
+\noindent The Kirchhoff migration made in ProMax relies on the velocity function containing the stacking velocities, unlike FD which relies on the migration velocity function which is based on interval velocity. The result of Kirchhoff migration can be seen on Figure \ref{KTM}.
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{kirchhmed3aforkirchh.jpg}
@@ -497,8 +497,8 @@ The Kirchhoff migration algorithm tries to make a hyperbola that has the best fi
 \section{Observations and comparisons}
 
 The processing done to the dataset during the entire workflow resulted in two migrated sections, one employing FDT-migration, the other employing Kirchhoff-migration. Four main observations were made in comparison of these sections both to each other and to the section prior to migration, see figures \ref{ny1} - \ref{ny3}.
-
-Compare near trace stack with AGC to post stack pre migration!!!!!
+\\
+By comparing the processed post-stack pre-migration section (figure \ref{fmig}) to the near-trace stack after AGC scaling (figure \ref{fig4}) it is clear that the signal processing performed through the workflow has had positive effect on the imaging. Higher S/N-ratio is obtained in figure \ref{fmig} due to removal of multiples and enhancing energy at higher travel time. The primary reflectors are therefore clearer, especially at larger travel-times in the further processed stack compared to the near-trace stack (figure \ref{fig4}).
 
 \begin{figure}[H]
 \includegraphics[width=\textwidth]{ny1.jpg}
@@ -559,6 +559,8 @@ A: before migration, B: after applying FDT-migration and C: after applying Kirch
 \end{figure}
 
 \noindent The pre-migrated section (Figure \ref{ny7} -A-C) shows the typical diffraction hyperbola, which is reduced to a scattering point after migration. Both types of migrations seem to handle the collapse of diffraction hyperbolas very well so that true reflectors are revealed. 
+
+\newpage
 
 \section{Concluding remarks}
 The workflow proved highly efficient in processing the data. Although the final results (FDT- and Kirchhoff-migrated sections) contain varying accuracy and S/N-ratios, they both reveal the presence of a salt dome fully enclosed by sedimentary layers. 
